@@ -114,10 +114,56 @@ opacity:1;
 .shop-btn:hover::after{
     content: " »»"
 }
-
+ /*contents of info to be in a row
+ text to be in the center
+ center div to be square and the left and right border to disappear
+ I want the borders of th div on the sides of center div to have arc on the outer borders*/
+.info{
+    display: flex;
+    justify-content: center;
+    margin:10px auto;
+    width:80vw;
+  
+}
 .info-text{
-    display: grid;
-    place-items: center;
+    border: none;
+    height: 15vh;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;;
+    position:relative;
+    top: -70px;
+}
+.info-text > .fa{
+    
+    color: forestgreen;
+    font-size: 40px;
+    margin-right:10px;
+}
+
+.info-text > a{
+    text-decoration: none;
+    margin-left:5px;
+    display: inline-block;
+    color:forestgreen;
+    font-weight:bolder;
+}
+.delivery{
+    border-radius:  60px 0px 0px 60px;
+    background-color:#D1B48C;
+}
+.customer-service{
+    border-left: 0px solid ;
+    border-right: 0px solid ;
+    background-color:#2F4F4E;
+}
+.donate{
+    background-color:;
+    border-radius:  0px 60px 60px 0px;
+    background-color:  #5E9EA0;
 }
 @media screen and (min-width: 600px){
     .icon{
