@@ -36,31 +36,36 @@ margin-right:50px;
 }
 
 #hero-page{
-    height: 90vh;
+    height: 80vh;
     width: 100%;
-    background: green;
+   
 }
 
 .hero-image{
     height:100%;
-    width:100%;
-    background-size: cover;
-    animation: slide 5s infinite;
+    width:100%; 
+    background: gray;
+    background-size:cover;
+    background-repeat: no-repeat;
+    animation: slide 20s infinite;
 }
+
 @keyframes slide{
     0%{
-
+    background-image: url(../images/servingtea-pexels-nikolay-osmachko-230477.jpg);
     }
     33%{
-
+background-image: url(../images/looseleaf-pexels-lil-artsy-1793035.jpg);
     }
     66%{
-
+    background-image: url(../images/leaveswithdue-pexels-sohail-nachiti-807598.jpg);
+   
     }
     100%{
-        
+    background-image: url(../images/tea-pantation-pexels-quang-nguyen-vinh-6711556.jpg)
     }
 }
+
 @media screen and (min-width: 600px){
     .icon{
         display:none
