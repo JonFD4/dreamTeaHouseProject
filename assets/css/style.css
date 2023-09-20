@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+   
+    display:flex;
+    background-color: #678a7e;
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+}
+header * a{
+    text-decoration: none;
+}
+header * li{
+    margin-left:10px;
+}
+
+.logo{
+    margin: 0 auto;
+}
+.navItems{
+    margin-left:50px;
+}
+.navItems, .user-action > ul{
+list-style: none;
+display: flex;
+
+}
+
+.user-action {
+margin-right:50px;
+}
+
+#hero-page{
+    height: 90vh;
+    width: 100%;
+    background: green;
+}
+
+.hero-image{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    animation: slide 5s infinite;
+}
+@keyframes slide{
+    0%{
+
+    }
+    33%{
+
+    }
+    66%{
+
+    }
+    100%{
+        
+    }
+}
+@media screen and (min-width: 600px){
+    .icon{
+        display:none
+    }
+    }
