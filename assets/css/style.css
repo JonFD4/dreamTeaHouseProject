@@ -14,6 +14,12 @@ header{
 }
 header * a{
     text-decoration: none;
+    color:white;
+    font-size:18px;
+    transition:all 0.5s;
+}
+.navItems * a:hover{
+    color: #8bc34a;
 }
 header * li{
     margin-left:10px;
@@ -47,7 +53,8 @@ margin-right:50px;
     background: gray;
     background-size:cover;
     background-repeat: no-repeat;
-    animation: slide 20s infinite;
+    animation: slide 20s ease-in-out infinite;
+    position:relative;
 }
 
 @keyframes slide{
@@ -65,7 +72,53 @@ background-image: url(../images/looseleaf-pexels-lil-artsy-1793035.jpg);
     background-image: url(../images/tea-pantation-pexels-quang-nguyen-vinh-6711556.jpg)
     }
 }
+.overlay{
+    width:inherit;
+    height:inherit;
+    background-color:rgba(0,0,0,0.4);
+    position:absolute;
+}
 
+.hero-text{
+    position:relative;
+    z-index:1;
+   margin-left:5em;
+}
+
+.beautiful-text{
+    color:white;
+    font-size:10em;
+}
+.slogan{
+    color:white;
+    font-size: 2vw;
+    text-align: center;
+}
+.shop-btn{
+    background-color: #8bc34a;
+   padding:20px;
+   text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  margin: 0 0 0 100px;
+  width:200px;
+  border: none;
+  border-radius: 50px;;
+  transition: all 1s;
+  color:white;
+  
+}
+.shop-btn:hover{
+opacity:1;
+}
+.shop-btn:hover::after{
+    content: " »»"
+}
+
+.info-text{
+    display: grid;
+    place-items: center;
+}
 @media screen and (min-width: 600px){
     .icon{
         display:none
