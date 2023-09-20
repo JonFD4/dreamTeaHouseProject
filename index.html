@@ -1,66 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream TeaHouse</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <style>
-       
-        /*
-        .navItems .icon{
-display:none;
-        }
-        @media screen and (min-width: 600px){
-            .navItems{
-                display: none;
-            }
-            .navItems .icon{
-                float:right;
-                display: block;
-            }
-        }*/
+    
+  
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header id="nav-wrapper" class="navbar-collapse navbar-mobile">
-        <nav id="nav-menu" class="navItems">
-           <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li> <a href="javascript:void(0);" class="icon" onclick="navMenubar()">
-                <i class="fa fa-bars"></i>
-              </a></li>
-           </ul>
-        </nav>
+      <nav id="nav-menu" class="navContainer">
+        <ul class="navItems">
+         <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon" onclick="navMenubar()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="logo"></div>
-
-        <div class="user-action">
-          
-        </div>
+      <div class="logo">Dream Teahouse</div>
+    
+      <div class="user-action">
+        <ul>
+           <li><i class="fas fa-search"></i></li> 
+        <li>  <a href="#">Sign in</a></li> 
+    <li> <span class="signup-link"><a href="#">Sign up </a></span></li> 
+        </ul>
+      </div>
     </header>
-<section>
-    <p>
-        Welcome to the Dream Teahouse 
-    </p>
-    <button> Shop now</button>
-</section>
-
-
+    <section id="hero-page">
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Welcome to the Dream Teahouse</h1>
+          <p>Ready to serve you anytime!!!</p>
+          <button>Shop now</button>
+        </div>
+      </div>
+    </section>
 
     <script>
-function navMenubar() {
-    let x = documeny.getElementById("nav-menu");
-    if(x.className == "navItems") {
-        x.className = " responsive";}
-        else{
-            x.className = "topnav";
-        }
-}
+     
     </script>
-</body>
+  </body>
 </html>
