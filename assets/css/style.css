@@ -2,15 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
+/*
+Header*/
+
 header{
-   
     display:flex;
-    background-color: #678a7e;
+    background-color:#678a7e;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
     height: 10vh;
+    padding: 20px;
+    overflow-y: hidden;
 }
 header * a{
     text-decoration: none;
@@ -19,28 +25,30 @@ header * a{
     transition:all 0.5s;
 }
 .navItems * a:hover{
-    color: #8bc34a;
-}
+    color: #8bc34a;}
+
 header * li{
-    margin-left:10px;
+    list-style: none;
+    padding: 5px 14px
 }
+.menu, .user-action > ul{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display:none;
+    color:#8bc34a;
+    font-size: 40px;
+    user-select: none;
+  }
 
-.logo{
-    margin: 0 auto;
-}
-.navItems{
-    margin-left:50px;
-}
-.navItems, .user-action > ul{
-list-style: none;
-display: flex;
-
-}
-
-.user-action {
-margin-right:50px;
-}
-
+  /*hero page*/
 #hero-page{
     height: 80vh;
     width: 100%;
@@ -123,7 +131,9 @@ opacity:1;
     justify-content: center;
     margin:10px auto;
     width:80vw;
-  
+    position:relative;
+    top: -70px;
+    
 }
 .info-text{
     border: none;
@@ -134,8 +144,7 @@ opacity:1;
     align-items: center;
     color:white;
     font-size: 20px;;
-    position:relative;
-    top: -70px;
+   
 }
 .info-text > .fa{
     
@@ -165,8 +174,63 @@ opacity:1;
     border-radius:  0px 60px 60px 0px;
     background-color:  #5E9EA0;
 }
-@media screen and (min-width: 600px){
-    .icon{
-        display:none
-    }
-    }
+
+
+
+
+
+@media screen and (max-width: 800px){
+.menu{
+    display:none;
+    position: absolute;
+    text-align: center;
+    padding: 16px 0;
+    background-color: rgba(103, 138, 126 , 0.5);
+    z-index: 2;
+}
+input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+.hero-text{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .hamburger {
+    display: block;
+  }
+  .beautiful-text{
+    color:white;
+    font-size:5em;
+
+}
+.slogan{
+    color:white;
+    font-size: 5vw;
+    text-align: center;
+}
+.shop-btn{
+    margin: 20px;
+  
+}
+
+ .info{
+    margin:0;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0px;
+  }
+  .info-text{
+    border-radius: 0px;
+    flex:1
+  }
+  .delivery{
+   
+    background-color: grey;}
+}
