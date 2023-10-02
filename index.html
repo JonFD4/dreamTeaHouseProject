@@ -52,14 +52,54 @@
     </div>
     
     </section>
+
     <div class="info">
         <p class="delivery info-text"><i class="fa fa-truck"></i>  Free  <a href="#">Delivery</a> </p>
         <p class="customer-service info-text"> <i class="fa fa-phone"></i> Quality <a href="#">Customer service</a></p>
         <p class="donate info-text"><i class="fa fa-seedling"></i> About us and <a href="#">our charity events</a></p>
      </div>
-     
+
+
+     <section id="about">
+      <div class="about-content">
+<h1> Dream Teahouse- Serving cups of dreams and bliss</h1>
+
+Welcome to Dream Teahouse, where every sip is a step towards a better world. We are a new startup company dedicated to providing a delightful and soul-soothing experience through our range of premium herbal teas. 
+What sets us apart is our commitment to making a positive impact on both our customers' health and the world around us.
+<span id="extra-content">
+
+At Dream Teahouse, we believe that the simple act of enjoying a cup of tea can have transformative effects on our overall well-being. 
+Our carefully crafted herbal tea blends are created using only the finest organic ingredients sourced from sustainable farms around the globe. 
+Each sip transports you to a world of tranquility, offering a moment of respite from the chaos of daily life.
+
+But our mission stretches beyond delivering exceptional teas. We are passionate about giving back to the community and making a meaningful difference in the world. As a charity-oriented company, we prioritize partnering with organizations dedicated to environmental conservation, social justice, and education.
+ With every purchase you make, a portion of the proceeds goes towards supporting these worthy causes, making your tea experience even more fulfilling.
+To ensure the highest quality and consistency, our teas are meticulously handcrafted and undergo rigorous testing and quality control measures. We strive to provide a range of flavors and blends that cater to every taste and preference. Whether you're seeking a rejuvenating cup to start your day, a calming blend to unwind in the evening, or a refreshing burst of flavor for a midday pick-me-up, we have the perfect tea to suit your mood.
+At Dream Teahouse, we value sustainability and remain committed to minimizing our environmental footprint. From eco-friendly packaging to prioritizing ethical sourcing practices, we strive to align every aspect of our business with our dedication to preserving our planet and its resources for future generations.
+Join us on this extraordinary tea-drinking journey and be a part of the movement towards a healthier lifestyle and a better world. Indulge in the incredible flavors, relish the tranquility, and together let's create a brighter future, one cup of tea at a time.
+Dream Teahouse - Sip. Savor. Make a Difference.
+</span>
+<div class="btn-div">
+<button onclick="readMorefunction()" id="myBtn"> Read More</button>
+</div>
+</div>
+     </section>
     <script>
-     
+
+
+        let myBtnElem = document.getElementById("myBtn");
+myBtnElem.addEventListener("click", function(){
+    let extraContent = document.getElementById("extra-content");
+    if (extraContent.style.display !== "none") {
+        myBtnElem.innerHTML = "Read More";
+        extraContent.style.display = "none";
+    } else {
+        myBtnElem.innerHTML = "Read Less";
+        extraContent.style.display = "inline";
+    }
+});
+    
+
     </script>
   </body>
 </html>
