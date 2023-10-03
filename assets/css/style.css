@@ -234,3 +234,8 @@ input[type=checkbox]:checked ~ .menu {
    
     background-color: grey;}
 }
+
+/*about styling*/
+#extra-content{
+    display:none;
+}
