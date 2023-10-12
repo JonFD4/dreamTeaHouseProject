@@ -4,8 +4,13 @@
     box-sizing: border-box;
     overflow-x: hidden;
     border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Font for headings and titles */
+h1, h2, h3 {
+    font-family: 'Great Vibes', cursive;
+ }
 /*
 Header*/
 
@@ -263,6 +268,8 @@ input[type=checkbox]:checked ~ .menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 5px;
 }
 #extra-content{
     display:none;
