@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    /*border: 1px solid red*/;
+    border: 1px solid red;
 }
 
 /*
@@ -24,6 +24,15 @@ header * a{
     color:white;
     font-size:18px;
     transition:all 0.5s;
+}
+
+.logo{
+    width: 30%;
+    height: auto;
+}
+.logo>img{
+    width:20vw;
+    height: auto;
 }
 .navItems * a:hover{
     color: #8bc34a;}
@@ -64,6 +73,7 @@ header * li{
     background-repeat: no-repeat;
     animation: slide 20s ease-in-out infinite;
     position:relative;
+    overflow-y: hidden;
 }
 
 @keyframes slide{
@@ -248,7 +258,12 @@ input[type=checkbox]:checked ~ .menu {
 }
 
 /*about styling*/
-
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #extra-content{
     display:none;
 }
