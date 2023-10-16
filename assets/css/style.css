@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    border: 1px solid red;
+   
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -132,11 +132,11 @@ background-image: url(../images/looseleaf-pexels-lil-artsy-1793035.jpg);
    text-align: center;
   cursor: pointer;
   font-size:24px;
-  margin: 0 0 0 100px;
+
   width:200px;
   border: none;
   border-radius: 50px;;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
   color:white;
   
 }
@@ -263,6 +263,8 @@ input[type=checkbox]:checked ~ .menu {
 }
 
 /*about styling*/
+
+
 .about-content{
     display: flex;
     flex-direction: column;
@@ -271,6 +273,27 @@ input[type=checkbox]:checked ~ .menu {
     text-align: center;
     margin: 5px;
 }
+.about-title{
+    font-size: 18px;
+}
 #extra-content{
     display:none;
+}
+.about-content-one{
+    padding: 20px;;
+    margin: 0 auto;
+    width: 60%;
+
+}
+.btn-div > button{
+    background-color: #8bc34a;
+    padding:10px;
+    text-align: center;
+   cursor: pointer;
+   font-size:18px;
+  margin: 15px;
+   width:200px;
+   border: none;
+   border-radius: 50px;;
+   color:white;
 }
