@@ -275,6 +275,11 @@ input[type=checkbox]:checked ~ .menu {
 }
 .about-title{
     font-size: 18px;
+    color:green;
+}
+.about-subtitles{
+color:#555;
+font-size: 30px;;
 }
 #extra-content{
     display:none;
@@ -296,4 +301,26 @@ input[type=checkbox]:checked ~ .menu {
    border: none;
    border-radius: 50px;;
    color:white;
+}
+.qualities-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.qualities-text * .fa{
+    font-size: 28px;
+    color:green;
+}
+.qualities-text * h3{
+    font-family:  'Montserrat', sans-serif ;
+    font-weight: bold;
+    color:#555
+}
+.horizontal{
+   height: 0.5px;
+    width: 60px;
+    border: dotted 1px green;
 }
