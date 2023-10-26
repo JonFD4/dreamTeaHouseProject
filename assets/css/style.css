@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
 :root {
@@ -67,6 +67,9 @@ header * li {
   background-color: #5e9ea0;
 }
 input[type="checkbox"] {
+  display: none;
+}
+.user-action-toggle{
   display: none;
 }
 
@@ -228,6 +231,23 @@ input[type="checkbox"] {
   }
   input[type="checkbox"]:checked ~ .menu {
     display: block;
+  }
+  .user-action-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-transform: capitalize;
+    height: 20vw;
+  }
+  .user-action-toggle > ul{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+  }
+  .user-action-toggle * .fa{
+    color: var(--bright-color);
+    margin-right: 5px;
   }
   .hero-text {
     position: relative;
