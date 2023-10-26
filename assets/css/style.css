@@ -210,12 +210,20 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 800px) {
+
+  .logo {width: 50vw}
+  .logo > img {
+    width: 40vw;
+    height: auto;
+
+  }
   .menu {
+    width: 60vw;
     display: none;
     position: absolute;
     text-align: center;
     padding: 16px 0;
-    background-color: rgba(103, 138, 126, 0.5);
+    background-color: rgba(103, 138, 126, 1);
     z-index: 2;
   }
   input[type="checkbox"]:checked ~ .menu {
@@ -242,7 +250,8 @@ input[type="checkbox"] {
     text-align: center;
   }
   .shop-btn {
-    margin: 20px;
+    margin: 0px;
+    padding: 10px;
   }
 
   .info {
@@ -260,6 +269,9 @@ input[type="checkbox"] {
   }
   .delivery {
     background-color: grey;
+  }
+  .user-action{
+    display: none;
   }
 }
 
