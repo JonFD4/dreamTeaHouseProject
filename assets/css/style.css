@@ -369,3 +369,25 @@ input[type="checkbox"] {
   width: 60px;
   border: dotted 1px green;
 }
+@media screen and (max-width: 800px) {
+  .about-content{
+    width:100%
+  }
+ .about-content-one > p {
+  font-size: 11px; 
+  width: 100%;
+ }
+  .qualities-text{
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .qt{
+    width: 50%;
+    height: 50%;
+    font-size: small;
+    padding: 20px;
+  }
+  .horizontal{
+    display: none;
+  }
+}
