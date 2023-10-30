@@ -85,7 +85,7 @@
   <h2 class="about-subtitles">Who we are? </h2>
 <p>
 Welcome to Dream Teahouse, where every sip is a step towards a better world. We are a new startup company dedicated to providing a delightful and soul-soothing experience through our range of premium herbal teas. 
-What sets us apart is our commitment to making a positive impact on both our customers' health and the world around us...
+What sets us apart is our commitment to making a positive impact on both our customers' health and the world around us. <span id="displayDots">...</span> 
 <span id="extra-content">
 
 At Dream Teahouse, we believe that the simple act of enjoying a cup of tea can have transformative effects on our overall well-being. 
@@ -152,13 +152,18 @@ Dream Teahouse - Sip. Savor. Make a Difference.
 
         let myBtnElem = document.getElementById("myBtn");
 myBtnElem.addEventListener("click", function(){
+  let dots = document.getElementById("displayDots");
     let extraContent = document.getElementById("extra-content");
     if (extraContent.style.display !== "none") {
         myBtnElem.innerHTML = "Read More";
         extraContent.style.display = "none";
+        dots.style.display="inline"
+   
     } else {
         myBtnElem.innerHTML = "Read Less";
         extraContent.style.display = "inline";
+        dots.style.display="none"
+       
     }
 });
     
