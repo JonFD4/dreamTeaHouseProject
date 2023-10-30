@@ -323,6 +323,10 @@ input[type="checkbox"] {
 #extra-content {
   display: none;
 }
+#displayDots{
+  display: inline;
+  font-weight: bolder;
+}
 .about-content-one {
   padding: 20px;
   margin: 0 auto;
@@ -369,6 +373,8 @@ input[type="checkbox"] {
   width: 60px;
   border: dotted 1px green;
 }
+
+
 @media screen and (max-width: 800px) {
   .about-content{
     width:100%
