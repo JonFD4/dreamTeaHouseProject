@@ -425,16 +425,31 @@ position: relative;
   align-items: center;
   width: 100%; 
   padding: 0 10px;
+
+  border-radius:8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
  
+}
+.slide:hover .caption{
+display:block;
+background-color: rgba(0, 0, 0, 0.4);
+color:white;
+  width:28%;
+  height:50%;
 }
 .slide >img{
   display: flex;
   width :200px;
   height:200px;
 }
+
  
 .caption {
   text-align: center;
+  display:none;
+  position: absolute;
+  bottom:20px;
+  
 }
 .product_name{
   display:block;
