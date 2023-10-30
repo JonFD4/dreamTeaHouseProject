@@ -456,3 +456,35 @@ color:white;
   margin-bottom:15px;
   font-size: larger;
 }
+.purchase-container{
+margin: 20px;
+
+}
+.purchase{
+  width: 90px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid green;
+  font-size: 1rem;
+  text-align: center;
+
+}
+.fa-shopping-basket{
+  color: rgba(0, 128, 0, 5);
+  font-size: 18px;
+  font-weight: bolder;
+  
+}
+.addElem{
+  background-color: var(--bright-color);
+  margin:0.5rem;
+  border:none;
+  border-radius: 5px;
+  height:3vh;
+  width: 10vw;
+  cursor:pointer
+}
+.addElem:target{
+ height:2vh;
+ width:9vh;
+}
