@@ -400,6 +400,22 @@ input[type="checkbox"] {
   }
 }
 /* styling product page*/
+#product{
+ 
+}
+#product > h1, #product > h2, #product > p{
+  display:flex;
+  justify-content: center;
+}
+#product > h2{
+  margin: 1rem;
+}
+#product > p{
+  margin:0 auto;
+  text-align:center ;
+  width:70%
+  
+}
 .carousel-container {
   display: flex;
   justify-content: center;
