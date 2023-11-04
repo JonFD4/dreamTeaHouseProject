@@ -459,7 +459,14 @@ color:white;
   height:200px;
 }
 
- 
+ .moreInfo{
+  color:green;
+  font-size: larger;
+  font-weight: bolder;
+  position:relative;
+  right: 5rem
+  
+ }
 .caption {
   text-align: center;
   display:none;
