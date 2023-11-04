@@ -511,3 +511,14 @@ margin: 20px;
  height:2vh;
  width:9vh;
 }
+
+/* Styling knowMore*/
+#knowMore{
+  width: 100%;
+  margin: 10rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
