@@ -434,7 +434,7 @@ text-align: center;
 .carousel-container {
   display: flex;
   justify-content: center;
-  
+  width:100%;
   position: relative;
   top:4rem;
 }
@@ -530,12 +530,3 @@ margin: 20px;
 }
 
 /* Styling knowMore*/
-#knowMore{
-  width: 100%;
-  margin: 10rem;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-}
