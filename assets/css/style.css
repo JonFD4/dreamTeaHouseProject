@@ -417,15 +417,26 @@ input[type="checkbox"] {
 }
 
 .des-text{
-width:50%;
-margin: 2rem;
+width:70%;
+margin-bottom: 7rem;
 text-align: center;
+
+}
+.des-text > h2{
+  margin:0.5rem;
+}
+.des-text > p{
+  position:absolute;
+  width:70%;
+  top: 8rem;
+  
 }
 .carousel-container {
   display: flex;
   justify-content: center;
   
-
+  position: relative;
+  top:4rem;
 }
 
 .carousel{
