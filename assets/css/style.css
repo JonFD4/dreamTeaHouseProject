@@ -4,9 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
-}
-body{
-  overflow-x: hidden;
+  /*overflow: hidden;*/
 }
 :root {
   --bright-color: #8bc34a;
@@ -136,7 +134,8 @@ input[type="checkbox"] {
 
 .beautiful-text {
   color: var(--text-color);
-  font-size: 5em;
+
+  font-size: clamp(2rem,10vw, 6rem);
   overflow: hidden;
 }
 .slogan {
@@ -269,10 +268,10 @@ input[type="checkbox"] {
     display: block;
     color: var(--bright-color)
   }
-  .beautiful-text {
+  /*.beautiful-text {
     color: var(--text-color);
     font-size: 5em;
-  }
+  }*/
   .slogan {
     color: var(--text-color);
     font-size: 5vw;
@@ -528,5 +527,3 @@ margin: 20px;
  height:2vh;
  width:9vh;
 }
-
-/* Styling knowMore*/
