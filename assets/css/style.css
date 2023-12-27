@@ -447,6 +447,7 @@ input[type="checkbox"] {
 .carousel-container {
   overflow: hidden;
   margin-top: 2rem;
+  width:100%
 }
 
 .carousel {
