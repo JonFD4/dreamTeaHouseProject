@@ -807,3 +807,22 @@ input[type="checkbox"] {
 .blog-btn:hover {
   background-color: #45a049;
 }
+
+/* styling footer */
+footer{
+  background-color:  #678a7e;;
+}
+ footer .logo{
+ margin: 0 auto;
+ padding:50px;
+ }
+
+.footer-columns{
+  display:flex;
+
+}
+.footer-column{
+  flex: 1;
+  max-width: 200px;
+  margin: 0 20px;
+}
