@@ -143,6 +143,23 @@ input[type="checkbox"] {
   font-size: clamp(2rem, 10vw, 6rem);
   overflow: hidden;
 }
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.fadeIn:nth-child(1) { animation-delay: 0.5s; } /* Adjust delay for h1 */
+.fadeIn:nth-child(2) { animation-delay: 1s; }   /* Adjust delay for h2 */
+.fadeIn:nth-child(3) { animation-delay: 1.5s; } /* Adjust delay for button */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .slogan {
   color: var(--text-color);
   font-size: 2vw;
@@ -585,7 +602,9 @@ input[type="checkbox"] {
   background-color: #f0f0f0;
   padding: 4rem 0;
 }
-
+.note{
+  color: var(--bright-color);
+}
 .knowmore-wrapper {
   display: flex;
   justify-content: space-between;
@@ -632,20 +651,14 @@ input[type="checkbox"] {
 .knowmore li {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
+  margin-bottom: 15px; 
+  transition: transform 0.3s ease-in-out;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.knowmore li:hover{
+  transform: scale(1.05);
+  color: var(--bright-color)
 }
-
-
 
 .icon {
   margin-right: 10px;
@@ -668,4 +681,3 @@ input[type="checkbox"] {
 .read-more-btn:hover {
   background-color: #45a049;
 }
-
