@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
-  /*overflow: hidden;*/
+  
 }
 :root {
   --bright-color: #8bc34a;
@@ -150,9 +150,9 @@ input[type="checkbox"] {
   animation: fadeInUp 0.5s forwards;
 }
 
-.fadeIn:nth-child(1) { animation-delay: 0.5s; } /* Adjust delay for h1 */
-.fadeIn:nth-child(2) { animation-delay: 1s; }   /* Adjust delay for h2 */
-.fadeIn:nth-child(3) { animation-delay: 1.5s; } /* Adjust delay for button */
+.fadeIn:nth-child(1) { animation-delay: 0.5s; } 
+.fadeIn:nth-child(2) { animation-delay: 1s; }   
+.fadeIn:nth-child(3) { animation-delay: 1.5s; } 
 
 @keyframes fadeInUp {
   to {
@@ -185,10 +185,6 @@ input[type="checkbox"] {
 .shop-btn:hover::after {
   content: " »";
 }
-/*contents of info to be in a row
- text to be in the center
- center div to be square and the left and right border to disappear
- I want the borders of th div on the sides of center div to have arc on the outer borders*/
 .info {
   display: flex;
   justify-content: center;
@@ -507,7 +503,7 @@ input[type="checkbox"] {
   border-radius: 10px;
 }
 
-/* Add media query for smaller screens */
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .slide {
     flex: 0 0 100%; /* Display one slide at a time on smaller screens */
@@ -679,5 +675,91 @@ input[type="checkbox"] {
 }
 
 .read-more-btn:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .knowmore-wrapper {
+    background-color: #f0f0f0; 
+  }
+
+  .image-content {
+    display: none;
+  }
+}
+/*blog styling */
+
+#blog {
+  background-color: #f5f8f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-post {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: scale(1.02);
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-post-content {
+  padding: 20px;
+}
+
+.blog-post-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.blog-post-date {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.blog-post-excerpt {
+  line-height: 1.6;
+}
+
+.blog-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.blog-btn:hover {
   background-color: #45a049;
 }
