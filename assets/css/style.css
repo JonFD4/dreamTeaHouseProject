@@ -1,3 +1,7 @@
+/*problems
+* hamburger menu stop working when position for header is fixed
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -63,8 +67,29 @@ header * li {
   gap: 1em;
   font-size: 18px;
 }
-.signup-link {
-  background-color: #5e9ea0;
+
+.user-action ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.user-action li {
+  margin-right: 15px;
+}
+
+.user-action a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+  background-color: var(--bright-color);
+}
+
+.user-action a:hover {
+  color:black
 }
 input[type="checkbox"] {
   display: none;
