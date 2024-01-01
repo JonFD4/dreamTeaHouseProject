@@ -993,6 +993,20 @@ transition: 0.3s ease-in-out;
   border-radius: 10px;
   height: 430px;;
 }
+@media screen and (max-width: 768px) {
+  .location-image img{
+    width: 100%;
+  max-width: 640px; 
+  }
+  .map iframe{
+    height:100%;
+    max-height: 430px;
+  }
+  .location-image{
+    display:flex;
+    flex-direction: column;
+  }
+}
 .opening-times {
   margin-top: 20px;
 }
