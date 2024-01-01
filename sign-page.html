@@ -122,6 +122,19 @@
 </form>
 <p class="toggle-form" onclick="toggleForm('signIn-container')">Already have an account</p>
   </section>
-  
+  <script>
+    function toggleForm(formId) {
+        const signInContainer = document.getElementById('signIn-container');
+        const signUpForm = document.getElementById('signup-form');
+
+        if (formId === 'signup-form') {
+            signInContainer.style.display = 'none';
+            signUpForm.style.display = 'block';
+        } else {
+            signInContainer.style.display = 'block';
+            signUpForm.style.display = 'none';
+        }
+    }
+</script>
 </body>
 </html>
