@@ -62,45 +62,16 @@ header * li {
   list-style: none;
   padding: 5px 14px;
 }
-.menu,
-.user-action > ul {
+.menu {
   display: flex;
   gap: 1em;
   font-size: 18px;
   
 }
-.user-action{
-  overflow: hidden;
-}
-.user-action ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  height:auto;
-  gap: 0.2em !important;
- 
-}
 
-.user-action li {
-  margin-right: clamp(5px, 2vw, 15px); /* Adjust spacing with clamp */
-}
+.user-action ul{
+  display:flex;
 
-.user-action a {
-  text-decoration: none;
-  color: white;
-  font-size: clamp(14px, 1vw, 18px); /* Responsive font size with clamp */
-  padding: clamp(5px, 2vw, 10px) clamp(10px, 2vw, 15px); /* Responsive padding with clamp */
-  border-radius: 5px;
-  transition: color 0.3s ease;
-  background-color: var(--bright-color);
-}
-@media (max-width: 768px) {
- .user-action a{ font-size: 10px; 
-  padding: 8px 12px;
-} 
-}
-.user-action a:hover {
- color:black;
 }
 input[type="checkbox"] {
   display: none;
