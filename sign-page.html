@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dream Teahouse</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon_io /android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x412" href="assets/images/favicon_io /android-chrome-512x512.png" />
+        <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/images/favicon_io /apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io /favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io /favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io /favicon.ico" />
+        <link rel="manifest" href="assets/images/favicon_io /site.webmanifest" />
+      </head>
+     
+<body id="sign-page">
+    
+  <header id="nav-wrapper" class="navbar-collapse navbar-mobile">
+    <nav id="nav-menu" class="navContainer">
+      <ul class="navItems">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+        <div class="menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#location-contact">Contact</a></li>
+          <hr class="divider" />
+          <div class="user-action-toggle">
+            <ul>
+              <li>
+                <i class="fa fa-user"></i>
+                <span class="hover-text">sign in</span>
+              </li>
+              <li>
+                <i class="fa fa-user-plus"></i>
+                <span class="hover-text">sign up</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="logo">
+      <img src="./assets/images/dreamteahouselogo.png" alt="image of logo" />
+    </div>
+
+    <div class="user-action">
+      <ul>
+        <li><i class="fas fa-search"></i></li>
+        <li><a href="sign-page.html">Sign in</a></li>
+        <li>
+          <span class="signup-link"><a href="sign-page.html #sign-up">Sign up </a></span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <section id="signIn-container">
+    <h1>Sign In</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="sign-in-email">
+                Email:
+            </label>
+            <input type="email" name="sign-in-email" id="sign-in-email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+            <button type="button">Sign In</button>
+        </div>
+        
+        <p class="toggle-form" onclick="toggleForm('signup-form')">Don't have an account? Sign Up</p>
+    </form>
+  </section>
+  <section id="signup-form">
+    <h1>Sign Up</h1>
+<form action="#" method="post">
+    <div class="form-group">
+        <label for="first-name">
+            First Name:
+        </label>
+        <input type="text" name="first-name" id="first-name">
+    </div>
+    <div class="form-group">
+        <label for="last-name">
+            Last Name
+        </label>
+        <input type="text" name="last-name" id="last-name">
+    </div>
+    <div class="form-group">
+        <label for="signup-email">
+            Email:
+        </label>
+        <input type="email" name="signup-email" id="signup-email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+    </div>
+    <div class="form-group">
+        <label for="confirm-pass">
+            Confirm password:
+        </label>
+        <input type="password" name="" id="">
+    </div>
+   
+    <div class="form-group">
+        <button type="button">Register</button>
+    </div>
+</form>
+<p class="toggle-form" onclick="toggleForm('signIn-container')">Already have an account</p>
+  </section>
+  
+</body>
+</html>
