@@ -70,7 +70,7 @@ header * li {
   
 }
 .user-action{
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .user-action ul {
   list-style: none;
@@ -651,56 +651,49 @@ input[type="checkbox"] {
 
 /* Know More article styling*/
 .knowmore {
+  background: url('../images/cupandplant.jpg') no-repeat;
   background-color: #f0f0f0;
+  color: white;
   padding: 4rem 0;
+  height: auto;
+  
 }
 .note{
-  color: var(--bright-color);
+  color: green;
 }
 .knowmore-wrapper {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 100%;
+  width: 12000px;;
   margin: 0 auto;
 }
 
 .knowmore-text-content {
   flex: 1;
   text-align: center;
-}
 
-.image-content {
-  flex: 1;
-  text-align: center;
-
-}
-
-.feature-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.feature-image:hover {
-  transform: scale(1.05);
 }
 
 .knowmore h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .knowmore h2 {
   font-size: 1.8rem;
-  color: #555;
+  color:var(--text-color);
   margin-bottom: 20px;
 }
-
+.knowmore ul{
+  margin: 40px;
+  padding: 4%;
+}
 .knowmore li {
+  font-size:1.5em;
   display: flex;
   align-items: center;
   margin-bottom: 15px; 
@@ -734,16 +727,6 @@ input[type="checkbox"] {
   background-color: #45a049;
 }
 
-/* Media Query for Small Screens */
-@media screen and (max-width: 768px) {
-  .knowmore-wrapper {
-    background-color: #f0f0f0; 
-  }
-
-  .image-content {
-    display: none;
-  }
-}
 /*blog styling */
 
 #blog {
