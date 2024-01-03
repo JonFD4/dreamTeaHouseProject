@@ -26,22 +26,22 @@
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
         <div class="menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#product">Products</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#location-contact">Contact</a></li>
+          <li><a href="index.html" aria-label="take user to home page">Home</a></li>
+          <li><a href="#about" aria-label="take user to about page">About</a></li>
+          <li><a href="#product" aria-labelledby="take user to product section">Products</a></li>
+          <li><a href="#blog" aria-label="take user to blog section">Blog</a></li>
+          <li><a href="#location-and-contact" alt="take user to contact and location page">Contact</a></li>
           <hr class="divider" />
           <div class="user-action-toggle">
             <ul>
               <li>
                 <i class="fa fa-user"></i>
-                <a href="sign-page.html"><span class="hover-text">sign in</span></a>
+                <a href="sign-page.html" aria-labelledby="take user to sign in page"><span class="hover-text">sign in</span></a>
                 
               </li>
               <li>
                 <i class="fa fa-user-plus"></i>
-                <a href="sign-page.html"><span class="hover-text">sign up</span></a>
+                <a href="sign-page.html" aria-labelledby="take user to sign in page"><span class="hover-text">sign up</span></a>
               </li>
             </ul>
           </div>
@@ -56,9 +56,9 @@
     <div class="user-action">
       <ul>
         <li><i class="fas fa-search"></i></li>
-        <li><a href="sign-page.html">Sign in</a></li>
+        <li><a href="sign-page.html" aria-labelledby="take user to sign page">Sign in</a></li>
         <li>
-          <span class="signup-link"><a href="sign-page.html#sign-up">Sign up </a></span>
+          <a href="sign-page.html" aria-labelledby="take user to sign page">Sign up </a>
         </li>
       </ul>
     </div>
@@ -70,21 +70,21 @@
       <div class="hero-text">
         <h1 class="fadeIn beautiful-text">Welcome to the Dream Teahouse</h1>
         <h2 class="fadeIn slogan">Ready to serve you anytime!!!</h2>
-        <button class="fadeIn shop-btn">Shop now</button>
+        <a href="#product" role="button" class="fadeIn shop-btn" aria-labelledby="take user to product section">Shop now</a>
       </div>
     </div>
   </section>
 
   <div class="info">
     <p class="delivery info-text">
-      <i class="fa fa-truck"></i> Free <a href="#">Delivery</a>
+      <i class="fa fa-truck"></i> Free <a href="#" role="button">Delivery</a>
     </p>
     <p class="customer-service info-text">
-      <i class="fa fa-phone"></i> Quality <a href="#">Customer service</a>
+      <i class="fa fa-phone"></i> Quality <a href="#location-and-contact" role="button" aria-label="take user to location and contact">Customer service</a>
     </p>
     <p class="donate info-text">
       <i class="fa fa-seedling"></i> About us and
-      <a href="#">our charity events</a>
+      <a href="#" role="button">our charity events</a>
     </p>
   </div>
 
@@ -137,7 +137,7 @@
             </span>
           </p>
           <div class="btn-div">
-            <button onclick="readMorefunction()" id="myBtn">Read More</button>
+            <button onclick="readMorefunction()" id="myBtn" aria-describedby="readmore button">Read More</button>
           </div>
         </div>
 
@@ -199,7 +199,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -214,7 +214,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -229,7 +229,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -244,7 +244,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -259,7 +259,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -274,7 +274,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="button" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -289,7 +289,7 @@
               <div class="purchase-container">
                 <form action="" method="post">
                   <label for="purchase"><i class="fa fa-shopping-basket"></i></label>
-                  <input type="number" class="purchase" id="purchase" />
+                  <input type="number" class="purchase" id="purchase" required/>
                   <input type="submit" value="Add To Basket" class="addElem" />
                 </form>
               </div>
@@ -298,11 +298,11 @@
         </div>
       </div>
       <div class="scroll-buttons">
-        <button id="scrollLeft" class="scroll-btn">&lt;</button>
-        <button id="scrollRight" class="scroll-btn">&gt;</button>
+        <button id="scrollLeft" class="scroll-btn" aria-describedby="moveleft">&lt;</button>
+        <button id="scrollRight" class="scroll-btn" aria-describedby="moveright">&gt;</button>
       </div>
       <div class="more-products">
-        <a href="product-page.html">more products ...</a>
+        <a href="product-page.html" alt="take user to product page">more products ...</a>
       </div>
 
     </div>
@@ -323,23 +323,23 @@
         </h2>
         <ul>
           <li>
-            <img class="icon" src="assets/images/knowMore-images/healthymetabolism.png" alt="Icon 1">
+            <img class="icon" src="assets/images/knowMore-images/healthymetabolism.png" alt="Boosts metabolism">
             Boosts Metabolism
           </li>
           <li>
-            <img class="icon" src="assets/images/knowMore-images/antioxidants.png" alt="Icon 2">
+            <img class="icon" src="assets/images/knowMore-images/antioxidants.png" alt="Antioxidants">
             Rich in Antioxidants
           </li>
           <li>
-            <img class="icon" src="assets/images/knowMore-images/healthyheart.png" alt="Icon 3">
+            <img class="icon" src="assets/images/knowMore-images/healthyheart.png" alt="Healthy heart">
             Improves Heart Health
           </li>
           <li>
-            <img class="icon" src="assets/images/knowMore-images/healthymind.png" alt="Icon 4">
+            <img class="icon" src="assets/images/knowMore-images/healthymind.png" alt="Healthy mind">
             Enhances Mental Alertness
           </li>
           <li>
-            <img class="icon" src="assets/images/knowMore-images/weight.png" alt="Icon 5">
+            <img class="icon" src="assets/images/knowMore-images/weight.png" alt="Weight management">
             Aids in Weight Management
           </li>
         </ul>
@@ -404,14 +404,14 @@
   <section id="donations">
 
   </section>
-  <section id="location">
+  <section id="location-and-contact">
     <h1>Give us a visit</h1>
     <h2>All are welcome</h2>
     <div class="teahouse-info">
       <p>Discover the perfect blend of serenity and flavor at Dream Teahouse. Join us on a journey of relaxation and delightful teas. We invite you to experience the warmth of our ambiance and the richness of our teas. Your oasis of calm in the heart of London awaits!</p>
     </div>
     <div class="location-image">
-      <img src="assets/images/teavector.jpg" alt="Teahouse Interior">
+      <img src="assets/images/teavector.jpg" alt="whimsical tea play vector">
       <div class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.541075634328!2d-0.1601546234024713!3d51.521635009663264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acec0d50469%3A0xefde890f4e494618!2s123%20Baker%20St%2C%20London%20W1U%206RZ!5e0!3m2!1sen!2suk!4v1703803350074!5m2!1sen!2suk"
@@ -520,7 +520,7 @@
         <form action="thankyou-newsletter.html" method="get">
           <input type="email" name="email" placeholder="Your email address" required>
       
-            <button type="submit">
+            <button type="submit" aria-describedby="submitButton">
               Subscribe
             </button>
          
@@ -534,7 +534,7 @@
     </div>
 
     <div class="up-btn">
-      <a href="#">&uarr;</a>
+      <a href="#" aria-label="Send to beginning of page">&uarr;</a>
     </div>
     <div class="copyright">
       <p>&copy; 2023 Dream Teahouse. All rights reserved.</p>
