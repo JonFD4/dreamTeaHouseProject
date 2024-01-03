@@ -1119,3 +1119,25 @@ option {
 .filter-btn:hover{
   background-color:rgba(76, 175, 80, 0.2);
 }
+
+/* Styling product pages */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-tile {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: 80vw;
+  height: 50vh;
+}
