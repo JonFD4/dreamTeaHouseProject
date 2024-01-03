@@ -44,7 +44,7 @@
                 <span class="hover-text">My Account</span>
               </li>
               <li>
-                <i class="fa fa-shopping-basket"></i>
+                <img class="basket-icon" src="basket_icon.png" alt="Basket Icon">
                 <span class="hover-text">check out</span>
               </li>
             </ul>
@@ -60,7 +60,7 @@
     <div class="user-action">
       <ul>
 
-        <a href="#">
+        <a href="index.html">
           <li><i class="product-fa fa fa-user"></i>
         </a>
         </li>
@@ -70,19 +70,23 @@
       </ul>
     </div>
   </header>
-  <div>
-    <input type="text" placeholder="Search..." />
-
-    <select>
-      <option value="all">All</option>
+  <div class="search-bar">
+    <form class="search-elem" action="#" method="get">
+      <input id="search-input" type="search"  required/>
+      <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+   
+    <form action="#" method="get"> 
+      <select>
+      <option value="all">All tea options</option>
       <option value="black">Black Tea</option>
       <option value="green">Green Tea</option>
       <option value="herbal">Herbal Tea</option>
       <option value="herbal">loose leaf</option>
       <option value="herbal">Packaged</option>
     </select>
-    <button>Filter</button>
-    <button>View Cart</button>
+    <button class="filter-btn" type="submit">Filter</button></form>
+  
   </div>
 
   <main>
@@ -95,8 +99,11 @@
         <div class="product-name">Oolong tea loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <img class="basket-icon" src="basket_icon.png" alt="Basket Icon">
-          <input class="purchase-input" type="number" value="1">
+          <form action="#" method="get">
+            <input class="purchase-input" type="number" value="1">
+         <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+          </form>
+          
         </div>
         <details>
           <summary>Description and how to brew</summary>
@@ -142,8 +149,11 @@
         <div class="product-name">Blue eyes tea loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <img class="basket-icon" src="basket_icon.png" alt="Basket Icon">
-          <input class="purchase-input" type="number" value="1">
+          <form action="#" method="get">
+            <input class="purchase-input" type="number" value="1">
+         <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+          </form>
+          
         </div>
         <details>
           <summary>Description and how to brew</summary>
@@ -190,8 +200,11 @@
         <div class="product-name">Indian Chai loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <img class="basket-icon" src="basket_icon.png" alt="Basket Icon">
-          <input class="purchase-input" type="number" value="1">
+          <form action="#" method="get">
+            <input class="purchase-input" type="number" value="1">
+         <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+          </form>
+          
         </div>
         <details>
           <summary>Description and how to brew</summary>
@@ -240,8 +253,11 @@
         <div class="product-name">Dry hibiscus tea</div>
         <div class="product-price">£5.99</div>
         <div>
-          <img class="basket-icon" src="basket_icon.png" alt="Basket Icon">
-          <input class="purchase-input" type="number" value="1">
+          <form action="#" method="get">
+            <input class="purchase-input" type="number" value="1">
+         <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+          </form>
+          
         </div>
         <details>
           <summary>Description and how to brew</summary>
