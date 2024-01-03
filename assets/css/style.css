@@ -11,8 +11,8 @@
   overflow-x: hidden;
 }
 :root {
-  --bright-color: #8bc34a;
-  --text-color: #fffff0;
+  --bright-color: #8bc34a; 
+  --text-color:#fff /*#fffff0*/;
 }
 
 /* Font for headings and titles */
@@ -95,7 +95,7 @@ input[type="checkbox"] {
 .hero-image {
   height: 100vh;
   width: 100%;
-  background: gray;
+  background: #333;
   background-size: cover;
   background-repeat: no-repeat;
   animation: slide 30s ease-in-out infinite;
@@ -441,7 +441,7 @@ input[type="checkbox"] {
   }
 }
 
-/* styling product page*/
+/* styling product section*/
 #product {
   background-color: #d4f8e8;
   height: 60rem;
@@ -626,10 +626,11 @@ input[type="checkbox"] {
 /* Know More article styling*/
 .knowmore {
   background: url("../images/cupandplant.jpg") no-repeat;
-  background-color: #f0f0f0;
+  background-color: green;
   color: white;
   padding: 4rem 0;
-  height: auto;
+  width:100%;
+  
 }
 .note {
   color: green;
@@ -639,13 +640,14 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  width: 12000px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .knowmore-text-content {
   flex: 1;
   text-align: center;
+  
 }
 
 .knowmore h1 {
@@ -664,7 +666,7 @@ input[type="checkbox"] {
   padding: 4%;
 }
 .knowmore li {
-  font-size: 1.5em;
+  font-size: 1.5 em;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -681,17 +683,31 @@ input[type="checkbox"] {
   max-width: 30px;
   max-height: 30px;
 }
-
 .read-more-btn {
+  display: inline-block;
+  padding: 10px 15px;
   background-color: #4caf50;
   color: #fff;
-  padding: 10px 20px;
-  border: none;
+  text-decoration: none;
   border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
+@media screen and (max-width: 600px) {
+  .knowmore{
+    background-size: cover; /* Add this line */
+    background-position: center; 
+  }
+  .read-more-btn {
+    min-width: 80px; /* Adjust this value for smaller screens */
+  }
+  .knowmore li{
+    font-size: 1em;
+  }
+}
+.read-more-btn:hover {
+  background-color: #45a049;
+}
+
 
 .read-more-btn:hover {
   background-color: #45a049;
