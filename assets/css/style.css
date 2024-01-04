@@ -12,7 +12,9 @@
 }
 :root {
   --bright-color: #8bc34a; 
-  --text-color:#fff /*#fffff0*/;
+  --text-color:#fffff0;
+  --button-color: darkgreen;
+  --title-color: darkgreen;
 }
 
 /* Font for headings and titles */
@@ -36,8 +38,9 @@ header {
 }
 header * a {
   text-decoration: none;
-  color: white;
-  font-size: 18px;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: bolder;
   transition: all 0.5s;
 }
 
@@ -51,7 +54,9 @@ header * a {
 }
 .navItems * a:hover,
 .user-action * a:hover {
-  color: var(--bright-color);
+  background-color: var(--bright-color);
+  padding:5px;
+  border-radius: 20px;;
 }
 
 .fa-search {
@@ -176,22 +181,24 @@ input[type="checkbox"] {
   text-align: center;
 }
 .shop-btn {
-  background-color: var(--bright-color);
-  text-align: center;
+  display: inline-flex;
+  background-color: var(--button-color);
+  align-items: center; 
+  padding: 0 20px; 
+  height: 50px; 
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
-  font-size: 24px;
-  font-weight: bold;
-  width: 200px;
-  height: 90px;
-  border: none;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  color: var(--text-color);
+  border-radius: 25px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .shop-btn:hover {
-  opacity: 1;
-  background-color: #5e9ea0;
+background-color: rgb(27, 102, 27);
+opacity:0.5
+  
 }
 .shop-btn:hover::after {
   content: " »";
@@ -211,8 +218,9 @@ input[type="checkbox"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-color);
+  color: #333;
   font-size: 20px;
+  font-weight: bold;
   z-index: 3;
 }
 .info-text > .fa {
@@ -225,19 +233,21 @@ input[type="checkbox"] {
   text-decoration: none;
   margin-left: 5px;
   display: inline-block;
-  color: forestgreen;
+  color: var(--bright-color);
   font-weight: bolder;
 }
 .delivery {
   border-radius: 60px 0px 0px 60px;
-  background-color: #d1b48c;
+  background-color: #d4f8e8;
 }
 .customer-service {
+  color: var(--text-color);
   border-left: 0px solid;
   border-right: 0px solid;
   background-color: #2f4f4e;
 }
-.donate {
+.payment {
+  color: var(--text-color);
   border-radius: 0px 60px 60px 0px;
   background-color: #5e9ea0;
 }
@@ -305,8 +315,8 @@ input[type="checkbox"] {
     text-align: center;
   }
   .shop-btn {
-    margin: 0px;
-    padding: 10px;
+    width: 50%;
+    overflow: hidden;
   }
 
   .info {
@@ -321,10 +331,9 @@ input[type="checkbox"] {
   .info-text {
     border-radius: 0px;
     flex: 1;
+    margin:0;
   }
-  .delivery {
-    background-color: grey;
-  }
+
   .user-action {
     display: none;
   }
@@ -345,15 +354,15 @@ input[type="checkbox"] {
 }
 
 .about-title {
-  font-size: 24px;
-  color: #4caf50;
-  font-weight: bold;
+  font-size: 30px;
+  color: var(--title-color);
+  font-weight: bolder;
   margin-bottom: 10px;
 }
 
 .about-subtitles {
   color: #555;
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
@@ -372,7 +381,7 @@ input[type="checkbox"] {
 }
 
 .btn-div > button {
-  background-color: #8bc34a;
+  background-color: var(--button-color);
   padding: 15px;
   text-align: center;
   cursor: pointer;
@@ -471,7 +480,7 @@ input[type="checkbox"] {
 .des-text h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  color: #00796b;
+  color: darkgreen/* #00796b*/;
 }
 
 .des-text h2 {
@@ -577,7 +586,7 @@ input[type="checkbox"] {
 }
 .scroll-btn {
   background-color: #4caf50;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -627,13 +636,13 @@ input[type="checkbox"] {
 .knowmore {
   background: url("../images/cupandplant.jpg") no-repeat;
   background-color: green;
-  color: white;
+  color:  var(--text-color);
   padding: 4rem 0;
   width:100%;
-  
+  font-weight: bolder;
 }
 .note {
-  color: green;
+  color: gold;
 }
 .knowmore-wrapper {
   display: flex;
@@ -649,16 +658,20 @@ input[type="checkbox"] {
   text-align: center;
   
 }
-
+.knowmore-text-content h2, .knowmore-text-content p{
+  color: var(--bright-color);
+  font-weight: bolder;
+  background-color: rgba(0, 77, 64, 0.5);
+}
 .knowmore h1 {
-  font-size: 2.5rem;
   color: var(--text-color);
+  background-color: rgba(0, 77, 64, 0.5);
+  font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .knowmore h2 {
   font-size: 1.8rem;
-  color: var(--text-color);
   margin-bottom: 20px;
 }
 .knowmore ul {
@@ -727,7 +740,8 @@ input[type="checkbox"] {
 }
 
 .blog-title {
-  font-size: 2em;
+  color:darkgreen;
+  font-size: 3em;
   margin-bottom: 20px;
 }
 
@@ -764,6 +778,7 @@ input[type="checkbox"] {
 .blog-post-title {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color:darkgreen;
 }
 
 .blog-post-date {
@@ -778,7 +793,7 @@ input[type="checkbox"] {
 .blog-btn {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #4caf50;
+  background-color: var(--button-color);
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
@@ -923,15 +938,18 @@ footer .logo {
     width: 100%;
   }
 }
-#location {
+#location-and-contact {
   text-align: center;
   padding: 50px;
   position: relative;
   overflow: hidden;
 }
-#location h1,
-location h2 {
-  color: green;
+#location-and-contact h1{
+  font-size: 30px;
+}
+#location-and-contact h1,
+#location-and-contact h2 {
+  color: var(--title-color);
 }
 .teahouse-info {
   color: #333;
