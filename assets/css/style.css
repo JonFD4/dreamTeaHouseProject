@@ -1,6 +1,3 @@
-/*problems
-* hamburger menu stop working when position for header is fixed
-*/
 
 * {
   padding: 0;
@@ -39,7 +36,7 @@ header {
 header * a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bolder;
   transition: all 0.5s;
 }
@@ -449,7 +446,7 @@ input[type="checkbox"] {
   }
 }
 
-/* styling product section*/
+/* styling product-carousel section*/
 #product {
   background-color: #d4f8e8;
   height: 60rem;
@@ -506,7 +503,6 @@ input[type="checkbox"] {
 
 .slide {
   box-sizing: border-box;
-
   flex: 0 0 33.33%; /* Display three slides at a time */
   padding: 0 10px;
   position: relative;
@@ -839,18 +835,18 @@ footer .logo {
 .footer-column li:hover {
   transform: scale(1.02);
 }
-.footer-column h3 {
+.footer-column h3, .newsletter-signup h3 {
   color: var(--bright-color);
-  opacity: 2;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: darkgreen;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 10px;
+  font-weight: bolder;
+  font-size: 2em;
+  transform: scale(1)
 }
 .footer-column a {
   text-decoration: none;
   color: var(--text-color);
+  font-size:1.1em;
+  font-weight:bold;
+ 
 }
 
 .newsletter-signup {
@@ -1359,7 +1355,7 @@ li {
 }
 
 .social-icons a:hover {
-  color: #6c5ce7;
+  color: var(--bright-color);
 }
 
 /* styling popular product page */
