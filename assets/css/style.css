@@ -136,17 +136,18 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   line-height: 90px;
-
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
   z-index: 1;
   margin-left: 5em;
-  top: 50%;
+  text-align: center;
 }
 
 .beautiful-text {
   color: var(--text-color);
-
-  font-size: clamp(2rem, 10vw, 6rem);
+  font-size: clamp(2rem, 8vw, 6rem);
   overflow: hidden;
 }
 
@@ -181,10 +182,10 @@ input[type="checkbox"] {
   display: inline-flex;
   background-color: var(--button-color);
   align-items: center; 
-  padding: 0 20px; 
+  padding: 10px 20px; 
   height: 60px; 
   width:auto; 
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: var(--text-color);
   text-decoration: none;
@@ -256,7 +257,7 @@ input[type="checkbox"] {
     height: auto;
   }
   .menu {
-    width: 60vw;
+    width: 100vw;
     display: none;
     position: absolute;
     text-align: center;
@@ -275,11 +276,12 @@ input[type="checkbox"] {
     color: var(--text-color);
     text-transform: capitalize;
     height: 20vw;
+    width:100%;
   }
   .user-action-toggle > ul {
     display: flex;
     flex-direction: row;
-    width: 50vw;
+    width: 100vw;
   }
   .user-action-toggle * .fa {
     color: var(--bright-color);
@@ -293,11 +295,16 @@ input[type="checkbox"] {
   }
   .hero-text {
     position: relative;
-    top: 150px;
+    bottom: 10px;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .beautiful-text {
+    font-size: clamp(1.5rem, 6vw, 4rem); 
+    line-height: 1.2;
   }
   .hamburger {
     display: block;
@@ -306,12 +313,15 @@ input[type="checkbox"] {
 
   .slogan {
     color: var(--text-color);
-    font-size: 5vw;
+    font-size: 5.5vw;
     text-align: center;
   }
   .shop-btn {
-    width: 200px;
+    width: 100%; 
+    max-width: 130px;
+    font-size: 16px;
     overflow: hidden;
+    margin-top: 10px;
    
   }
 
@@ -328,8 +338,11 @@ input[type="checkbox"] {
     border-radius: 0px;
     flex: 1;
     margin:0;
+    font-size:0.875rem
   }
-
+  .info-text > .fa {
+    font-size: 1.5rem; /* 24px */
+  }
   .user-action {
     display: none;
   }
@@ -982,8 +995,12 @@ footer .logo {
     display: flex;
     flex-direction: column;
   }
+  table{
+    width:100%;
+  }
 }
 .opening-times {
+  margin-top: 20px;
   margin-top: 20px;
 }
 
@@ -991,6 +1008,8 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  font-size: 10px; 
+    padding: 10px; 
 }
 
 th,
