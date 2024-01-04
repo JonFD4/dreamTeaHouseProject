@@ -21,7 +21,7 @@
 h1,
 h2,
 h3 {
-  font-family: "Great Vibes", cursive;
+  font-family: cursive, sans-serif;
 }
 /*
 Header*/
@@ -39,7 +39,7 @@ header {
 header * a {
   text-decoration: none;
   color: var(--text-color);
-  font-size: 20px;
+  font-size: 1em;
   font-weight: bolder;
   transition: all 0.5s;
 }
@@ -196,12 +196,7 @@ input[type="checkbox"] {
 }
 
 .shop-btn:hover {
-background-color: rgb(27, 102, 27);
-opacity:0.5
-  
-}
-.shop-btn:hover::after {
-  content: " »";
+  background-color: hsla(120, 30%, 25%, 1);
 }
 .info {
   display: flex;
@@ -222,6 +217,7 @@ opacity:0.5
   font-size: 20px;
   font-weight: bold;
   z-index: 3;
+  cursor: pointer;
 }
 .info-text > .fa {
   color: forestgreen;
@@ -252,7 +248,7 @@ opacity:0.5
   background-color: #5e9ea0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .logo {
     width: 50vw;
   }
@@ -315,8 +311,9 @@ opacity:0.5
     text-align: center;
   }
   .shop-btn {
-    width: 50%;
+    width: 200px;
     overflow: hidden;
+   
   }
 
   .info {
