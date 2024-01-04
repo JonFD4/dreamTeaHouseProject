@@ -845,6 +845,9 @@ footer .logo {
   list-style: none;
   margin: 10px;
   transition: 0.3s ease-in-out;
+  color: var(--text-color);
+  font-size:1.1em;
+  font-weight:bold;
 }
 .footer-column li:hover {
   transform: scale(1.02);
