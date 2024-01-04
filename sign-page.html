@@ -31,7 +31,7 @@
           <li><a href="index.html">About</a></li>
           <li><a href="product-page.html">Products</a></li>
           <li><a href="index.html#blog">Blog</a></li>
-          <li><a href="index.html#location-contact">Contact</a></li>
+          <li><a href="index.html#location-and-contact">Contact</a></li>
           <hr class="divider" />
           
         </div>
@@ -49,19 +49,19 @@
   <section>
   <section id="signIn-container">
     <h1>Sign In</h1>
-    <form action="#" method="post">
+    <form action="index.html" method="get">
         <div class="form-group">
             <label for="sign-in-email">
                 Email:
             </label>
-            <input type="email" name="sign-in-email" id="sign-in-email">
+            <input type="email" name="sign-in-email" id="sign-in-email" required>
         </div>
         <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <label for="sign-in-password" required>Password:</label>
+            <input type="password" id="sign-in-password" name="password" placeholder="Enter your password">
         </div>
         <div class="form-group">
-            <button type="button">Sign In</button>
+            <button type="submit">Sign In</button>
         </div>
         
         <p class="toggle-form" onclick="toggleForm('signup-form')">Don't have an account? Sign Up</p>
@@ -69,44 +69,45 @@
   </section>
   <section id="signup-form">
     <h1>Sign Up</h1>
-<form action="#" method="post">
+<form action="thankyou-newsletter.html" method="get">
     <div class="form-group">
         <label for="first-name">
             First Name:
         </label>
-        <input type="text" name="first-name" id="first-name">
+        <input type="text" name="first-name" id="first-name" required>
     </div>
     <div class="form-group">
         <label for="last-name">
             Last Name
         </label>
-        <input type="text" name="last-name" id="last-name">
+        <input type="text" name="last-name" id="last-name" required>
     </div>
     <div class="form-group">
         <label for="signup-email">
             Email:
         </label>
-        <input type="email" name="signup-email" id="signup-email">
+        <input type="email" name="signup-email" id="signup-email" required>
     </div>
     <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password">
+        <label for="password" >Password:</label>
+        <input type="password" name="password" id="password" required>
     </div>
     <div class="form-group">
         <label for="confirm-pass">
             Confirm password:
         </label>
-        <input type="password" name="" id="">
+        <input type="password" name="" id="confirm-pass" required>
     </div>
    
     <div class="form-group">
-        <button type="button">Register</button>
+        <button type="submit">Register</button>
     </div>
 </form>
 <p class="toggle-form" onclick="toggleForm('signIn-container')">Already have an account</p>
   </section>
   <script>
     function toggleForm(formId) {
+        console.log('Toggle form called with formId:', formId);
         const signInContainer = document.getElementById('signIn-container');
         const signUpForm = document.getElementById('signup-form');
 
@@ -117,7 +118,8 @@
             signInContainer.style.display = 'block';
             signUpForm.style.display = 'none';
         }
+        event.preventDefault();
     }
-</script>
+</script> 
 </body>
 </html>
