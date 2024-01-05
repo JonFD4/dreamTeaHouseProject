@@ -94,7 +94,7 @@ input[type="checkbox"] {
 /* Hamburger Menu Styles */
 .hamburger {
   display: none;
-  color: var(--brightColor);
+  color: var(--bright-color);
   font-size: 40px;
   user-select: none;
 }
@@ -632,7 +632,7 @@ input[type="checkbox"] {
   text-align: center;
 }
 .fa-shopping-basket {
-  color: rgba(0, 128, 0, 5);
+  color: rgb(0, 128, 0,);
   font-size: 18px;
   font-weight: bolder;
 }
@@ -747,7 +747,7 @@ input[type="checkbox"] {
   padding: 4%;
 }
 .knowmore li {
-  font-size: 1.5 em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -975,7 +975,7 @@ footer .logo {
   color: darkgreen;
   background-color: var(--bright-color);
   width: 100%;
-  opacity: 2;
+  opacity: 1;
   font-weight: bold;
 }
 .up-btn {
