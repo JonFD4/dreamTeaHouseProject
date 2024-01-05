@@ -27,15 +27,15 @@
   <header id="nav-wrapper" class="navbar-collapse navbar-mobile">
     <nav id="nav-menu" class="navContainer">
       <ul class="navItems">
-        <input type="checkbox" id="checkbox_toggle" />
+        <input type="checkbox" id="checkbox_toggle" aria-describedby="hamburger-function"/>
         <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
         <div class="menu">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="#product">Products</a></li>
-          <li><a href="index.html#blog">Blog</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="index.html" aria-label="take user to home page">Home</a></li>
+          <li><a href="index.html#about" aria-label="take user to about section">About</a></li>
+          <li><a href="index.html#product" aria-label="take user to product section">Products</a></li>
+          <li><a href="index.html#blog" aria-label="take user to blog section">Blog</a></li>
+          <li><a href="index.html#location-and-contact" aria-label="take user to location and contact section">Contact</a></li>
           <hr class="divider" />
           <div class="user-action-toggle">
             <ul>
@@ -65,15 +65,15 @@
         </a>
         </li>
         <li>
-          <button><i class="product-fa fa fa-shopping-basket"></i> </button>
+          <button type="button" role="button" aria-label="check-out-basket"><i class="product-fa fa fa-shopping-basket"></i> </button>
         </li>
       </ul>
     </div>
   </header>
   <div class="search-bar">
     <form class="search-elem" action="#" method="get">
-      <input id="search-input" type="search" required />
-      <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      <input id="search-input" type="search" aria-label="search" required />
+      <button type="submit" role="button" arial-label="search"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
 
     <form action="#" method="get">
@@ -85,7 +85,7 @@
         <option value="herbal">loose leaf</option>
         <option value="herbal">Packaged</option>
       </select>
-      <button class="filter-btn" type="submit">Filter</button>
+      <button class="filter-btn" role="button" type="submit" aria-describedby="submit-btn">Filter</button>
     </form>
 
   </div>
@@ -101,8 +101,8 @@
         <div class="product-price">£5.99</div>
         <div>
           <form action="#" method="get">
-            <input class="purchase-input" type="number" value="1">
-            <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+            <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
+            <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
 
         </div>
@@ -154,8 +154,8 @@
 
         <div>
           <form action="#" method="get">
-            <input class="purchase-input" type="number" value="1">
-            <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+            <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
+            <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket" ></i></button>
           </form>
 
         </div>
@@ -208,8 +208,8 @@
         <div class="product-price">£5.99</div>
         <div>
           <form action="#" method="get">
-            <input class="purchase-input" type="number" value="1">
-            <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+            <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
+            <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
 
         </div>
@@ -268,8 +268,8 @@
         <div class="product-price">£5.99</div>
         <div>
           <form action="#" method="get">
-            <input class="purchase-input" type="number" value="1">
-            <button type="submit"><i class="fa fa-shopping-basket"></i></button>
+            <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
+            <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
 
         </div>
