@@ -1,8 +1,34 @@
 # Dream Tea House
 Scenario: Dream Teahouse is a newly established premium teashop that offers a unique, high-quality tea blend as its flagship product. To portray their commitment to providing an exceptional tea-drinking experience, Dream Teahouse plans to create an informational website that will serve as an online resource for tea enthusiasts and potential customers. 
 ## Deployment
-This is the live website
-[Dream Teahouse](https://jonfd4.github.io/portfolioproject1-repeat/product-page.html)
+This is the live website and repo:
+* [Dream Teahouse](https://jonfd4.github.io/portfolioproject1-repeat/product-page.html)
+* [Repositiory](https://github.com/JonFD4/portfolioproject1-repeat.git)
+### To deploy on github
+1. Sign in to github and find the right repository.
+2. Click on settings and then pages.
+3. Under build and deployment, make sure set the source: "Deploy from a branch" and Branch: "main" - another dropdown will I appear beside this; make sure the selected item is "file icon/root".
+4. Click save to begin the building process. When the page is refreshed the link to the live deployment website will be available at the top.
+
+### Forking the GitHub Repository
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+
+1. Log in to GitHub and locate the GitHub Repository.
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
+   
+### Making a Local Clone
+1. Log in to GitHub and find the GitHub Repository
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+     ```bash
+     $ git clone https://github.com/JonFD4/projectportfolio2-0.git
+     ```
+7. Press Enter. Your local clone will be created.
+
 # Overview
 Create a functional and aesthetically pleasing website that is responsive, considers accesbility and is user-friendly.
 
