@@ -1,30 +1,26 @@
-
+/* Reset and Base Styles */
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
+
 :root {
-  --bright-color: #8bc34a; 
-  --text-color:#fffff0;
+  --bright-color: #8bc34a;
+  --text-color: #fffff0;
   --button-color: darkgreen;
   --title-color: darkgreen;
 }
 
-/* Font for headings and titles */
-h1,
-h2,
-h3 {
+/* Typography */
+h1, h2, h3 {
   font-family: cursive, sans-serif;
 }
-/*
-Header*/
 
+/* Header Styles */
 header {
   display: flex;
+  flex-direction: row;
   background-color: #678a7e;
   text-align: center;
   align-items: center;
@@ -33,7 +29,9 @@ header {
   padding: 20px;
   overflow-y: hidden;
 }
-header * a {
+
+header a {
+
   text-decoration: none;
   color: var(--text-color);
   font-size: 1.2em;
@@ -41,28 +39,38 @@ header * a {
   transition: all 0.5s;
 }
 
+/* Logo Styles */
 .logo {
   width: 30%;
   height: auto;
 }
+
 .logo > img {
   width: 20vw;
   height: auto;
 }
-.navItems * a:hover,
-.user-action * a:hover {
+
+/* Navigation Styles */
+.navItems{
+  display: flex;
+  flex-direction: row;
+}
+.navItems a:hover,
+.user-action a:hover {
   background-color: var(--bright-color);
-  padding:5px;
-  border-radius: 20px;;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .fa-search {
   color: var(--bright-color);
 }
-header * li {
+
+header li {
   list-style: none;
   padding: 5px 14px;
 }
+
 .menu {
   display: flex;
   gap: 1em;
@@ -72,21 +80,106 @@ header * li {
 .user-action ul {
   display: flex;
 }
+
 input[type="checkbox"] {
   display: none;
 }
-.user-action-toggle,
-.divider {
+
+.user-action-toggle {
   display: none;
 }
 
-/* HAMBURGER MENU */
+/* Hamburger Menu Styles */
 .hamburger {
   display: none;
   color: var(--brightColor);
   font-size: 40px;
   user-select: none;
 }
+.divider{
+  display: none;
+}
+/* Media Query for Hamburger Menu */
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 50vw;
+  }
+
+  .logo > img {
+    width: 40vw;
+    height: auto;
+  }
+
+  .navItems {
+    display: none; 
+    flex-direction: column;
+  }
+
+  input[type="checkbox"]:checked ~ nav .navItems {
+    display: flex;
+    flex-direction: column; /* display items vertically */
+  }
+
+  input[type="checkbox"]:checked ~ nav .divider {
+    display: flex;
+  }
+
+  .menu {
+    width: 100vw;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    padding: 16px 0;
+    background-color: rgba(103, 138, 126, 1);
+    z-index: 2;
+  }
+
+  
+
+  .user-action-toggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(103, 138, 126, 1);
+    z-index: 2;
+  }
+
+  .user-action-toggle li {
+    list-style: none;
+    padding: 5px 14px;
+  }
+
+  .user-action-toggle a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition: all 0.5s;
+  }
+
+  .user-action-toggle a:hover {
+    background-color: var(--bright-color);
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  .user-action-toggle * .fa {
+    color: var(--bright-color);
+    margin-right: 5px;
+  }
+
+  .hamburger {
+    display: block;
+    color: var(--bright-color);
+  }
+
+  .user-action {
+    display: none;
+  }
+}
+
 
 /*hero page*/
 #hero-page {
@@ -249,45 +342,6 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 900px) {
-  .logo {
-    width: 50vw;
-  }
-  .logo > img {
-    width: 40vw;
-    height: auto;
-  }
-  .menu {
-    width: 100vw;
-    display: none;
-    position: absolute;
-    text-align: center;
-    padding: 16px 0;
-    background-color: rgba(103, 138, 126, 1);
-    z-index: 2;
-  }
-  input[type="checkbox"]:checked ~ .menu,
-  .divider {
-    display: block;
-  }
-  .user-action-toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--text-color);
-    text-transform: capitalize;
-    height: 20vw;
-    width:100%;
-  }
-  .user-action-toggle > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-  }
-  .user-action-toggle * .fa {
-    color: var(--bright-color);
-    margin-right: 5px;
-  }
   .hover-text {
     transition: 0.2s ease-in-out;
   }
@@ -307,10 +361,7 @@ input[type="checkbox"] {
     font-size: clamp(1.5rem, 6vw, 4rem); 
     line-height: 1.2;
   }
-  .hamburger {
-    display: block;
-    color: var(--bright-color);
-  }
+  
 
   .slogan {
     color: var(--text-color);
@@ -344,9 +395,7 @@ input[type="checkbox"] {
   .info-text > .fa {
     font-size: 1.5rem; /* 24px */
   }
-  .user-action {
-    display: none;
-  }
+  
 }
 
 /*about styling*/
