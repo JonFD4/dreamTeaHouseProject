@@ -79,6 +79,8 @@ header li {
 
 .user-action ul {
   display: flex;
+  color: var(--text-color)
+  ;
 }
 
 input[type="checkbox"] {
@@ -114,22 +116,26 @@ input[type="checkbox"] {
     display: none; 
     flex-direction: column;
   }
-
+  #checkbox_toggle:checked ~ .navItems {
+    display: block;
+    position: absolute;
+    z-index:3;
+    background-color: rgba(103, 138, 126, 1);
+    width: 100%;
+  }
+  
   input[type="checkbox"]:checked ~ nav .navItems {
     display: flex;
     flex-direction: column; /* display items vertically */
   }
 
-  input[type="checkbox"]:checked ~ nav .divider {
-    display: flex;
-  }
 
   .menu {
     width: 100vw;
     flex-direction: column;
     position: absolute;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px;
     background-color: rgba(103, 138, 126, 1);
     z-index: 2;
   }
@@ -138,7 +144,9 @@ input[type="checkbox"] {
 
   .user-action-toggle {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    flex-direction: row;
     position: absolute;
     top: 100%;
     left: 0;
@@ -151,7 +159,7 @@ input[type="checkbox"] {
     padding: 5px 14px;
   }
 
-  .user-action-toggle a {
+  .user-action-toggle li, .user-action-toggle a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2em;
@@ -159,8 +167,9 @@ input[type="checkbox"] {
     transition: all 0.5s;
   }
 
-  .user-action-toggle a:hover {
+  .user-action-toggle li:hover, .user-action-toggle a:hover {
     background-color: var(--bright-color);
+    color:var(--text-color);
     padding: 5px;
     border-radius: 20px;
   }
@@ -346,7 +355,7 @@ input[type="checkbox"] {
     transition: 0.2s ease-in-out;
   }
   .hover-text:hover {
-    color: var(--bright-color);
+    color: var(--text-color);
   }
   .hero-text {
     position: relative;
