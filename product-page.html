@@ -10,73 +10,68 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon_io /android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x412" href="assets/images/favicon_io /android-chrome-512x512.png" />
-  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/images/favicon_io /apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io /favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io /favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io /favicon.ico" />
-  <link rel="manifest" href="assets/images/favicon_io /site.webmanifest" />
-  <style>
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io_/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io_/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io_/favicon-16x16.png">
+<link rel="manifest" href="assets/images/favicon_io_/site.webmanifest">
 
   </style>
 </head>
 
 <body>
 
-  <header id="nav-wrapper" class="navbar-collapse navbar-mobile">
-    <nav id="nav-menu" class="navContainer">
-      <ul class="navItems">
-        <input type="checkbox" id="checkbox_toggle" aria-describedby="hamburger-function"/>
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  <!-- Header 3: Integrated content from header 1 into header 2 -->
+<header class="navbar-mobile">
+  <nav class="navContainer">
+    <input type="checkbox" id="checkbox_toggle">
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-        <div class="menu">
-          <li><a href="index.html" aria-label="take user to home page">Home</a></li>
-          <li><a href="index.html#about" aria-label="take user to about section">About</a></li>
-          <li><a href="index.html#product" aria-label="take user to product section">Products</a></li>
-          <li><a href="index.html#blog" aria-label="take user to blog section">Blog</a></li>
-          <li><a href="index.html#location-and-contact" aria-label="take user to location and contact section">Contact</a></li>
-          <hr class="divider" />
-          <div class="user-action-toggle">
-            <ul>
-              <li>
-                <i class="fa fa-user"></i>
-                <span class="hover-text">My Account</span>
-              </li>
-              <li>
-               
-                <span class="hover-text">check out</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </ul>
-    </nav>
+    <ul class="navItems">
+      <li><a href="index.html" aria-label="take user to home page">Home</a></li>
+      <li><a href="#about" aria-label="take user to about page">About</a></li>
+      <li><a href="#product" aria-labelledby="take user to product section">Products</a></li>
+      <li><a href="#blog" aria-label="take user to blog section">Blog</a></li>
+      <li><a href="#location-and-contact">Contact</a></li>
 
-    <div class="logo">
-      <img src="./assets/images/dreamteahouselogo.png" alt="image of logo" />
-    </div>
-
-    <div class="user-action">
-      <ul>
-
-        <a href="index.html">
-          <li><i class="product-fa fa fa-user"></i>
-        </a>
+      <!-- Integrated User Action Toggle content from header 1 -->
+      <ul class="user-action-toggle">
+        <li>
+          <i class="fa fa-user"></i>
+          <a href="sign-page.html" aria-labelledby="take user to sign in page"><span class="hover-text">My Account</span></a>
         </li>
         <li>
-          <button type="button" role="button" aria-label="check-out-basket"><i class="product-fa fa fa-shopping-basket"></i> </button>
+          <span class="hover-text">Check out</span>
         </li>
       </ul>
-    </div>
-  </header>
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
+  </div>
+
+  <div class="user-action">
+    <ul>
+      <!-- Integrated User Action content from header 1 -->
+      <a href="index.html">
+        <li><i class="product-fa fa fa-user"></i></li>
+      </a>
+      <li>
+        <button type="button" role="button" aria-label="check-out-basket"><i class="product-fa fa fa-shopping-basket"></i></button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
   <div class="search-bar">
-    <form class="search-elem" action="#" method="get">
-      <input id="search-input" type="search" aria-label="search" required />
+    <form class="search-elem" action="product-page.html" method="get">
+      <input id="search-input" type="search" aria-label="search" required>
       <button type="submit" role="button" arial-label="search"><i class="fa fa-search" aria-hidden="true"></i></button>
     </form>
 
-    <form action="#" method="get">
+    <form action="product-page.html" method="get">
       <select>
         <option value="all">Tea options</option>
         <option value="black">Black Tea</option>
@@ -85,7 +80,7 @@
         <option value="herbal">loose leaf</option>
         <option value="herbal">Packaged</option>
       </select>
-      <button class="filter-btn" role="button" type="submit" aria-describedby="submit-btn">Filter</button>
+      <button class="filter-btn" role="button" type="submit" aria-label="submit-btn">Filter</button>
     </form>
 
   </div>
@@ -100,7 +95,7 @@
         <div class="product-name">Oolong tea loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="#" method="get">
+          <form action="product-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
@@ -153,7 +148,7 @@
         <div class="product-price">£5.99</div>
 
         <div>
-          <form action="#" method="get">
+          <form action="product-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket" ></i></button>
           </form>
@@ -207,7 +202,7 @@
         <div class="product-name">Indian Chai loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="#" method="get">
+          <form action="product-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
@@ -267,7 +262,7 @@
         <div class="product-name">Dry hibiscus tea</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="#" method="get">
+          <form action="product-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
