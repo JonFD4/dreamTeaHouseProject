@@ -31,6 +31,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 7. Press Enter. Your local clone will be created.
 ---
 <br>
+
 # Overview
 Create a functional and aesthetically pleasing website that is responsive, considers accesbility and is user-friendly.
 
@@ -73,7 +74,9 @@ When developing the website for Dream Teahouse, the website developer would focu
 4. SEO Optimization: The developer would implement search engine optimization techniques to improve the website's visibility on search engines. This helps potential customers find Dream Teahouse easily when searching for tea-related information or products.
 
 5. The developers aims to make use and achieve understanding of the potential of CSS and its implementation for web development.
+
 ---
+
 ## Planning
 * Imagery: The images used are vital in conveying peace and traquility witouth overshadowing the writting context of the page. The ones used in the products sections are to attract user and give them an idea of the product they will be receiving.
 
@@ -163,7 +166,7 @@ The structure of the image was designed with the intention that not all of it wi
 * It also has a button that directs user to the top of the page
 </details>
 <details>
-<summary> Description of product page </summary>
+<summary> Description of product page and </summary>
 
 ![product page](docs/ReadmeImg/features/wproductpage.png)
 * The navbar is similar to that of index page, however on the right side are two buttons- check out and a person icon- my account.
@@ -194,6 +197,19 @@ The structure of the image was designed with the intention that not all of it wi
 </details>
 
 
+<details>
+<summary> Description of popular product page</summary>
+
+![Popular product page](docs/ReadmeImg/features/pop-product1.png)
+* The page features a navbar the functions in the same manner as the other pages.
+* It contains descriptive text about the popular product. Including images and a video.
+* The video, on load is muted, however has controls for user to determine what they want to do with the video.
+* At the bottom is a link that directs user to the product page.
+
+![Popular product page](docs/ReadmeImg/features/pop-product.png)
+
+</details>
+
 ---
 
 ## Tools and technologies
@@ -202,10 +218,21 @@ The structure of the image was designed with the intention that not all of it wi
  - JavaScript
  - HTML
 
-**Tools**
-- VS Code
-- git and github
-- Balsamiq
+**Libraries and Frameworks used**
+* VS Code
+* git and github- used for version control
+* Balsamiq- used for wireframes
+* AmIResponsive - Used to verify responsiveness of website on different devices.
+* Chrome Dev Tools - Used for overall development responsiveness and performance.
+* Font Awesome - For icons
+* W3C - Used for HTML Validation.
+* Jigsaw validator - for css validation
+* freepik - used for images
+* pexel - used for images
+* pinterest- for inspiration
+
+
+---
 
 ## Test and validation
 validations was carried out and used to make necessary improvements to code for final products.
@@ -275,3 +302,15 @@ The Website was tested on Google Chrome, Firefox, and safari browsers with no ma
 ### Responsiveness testing
 * [Responsive checker](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fjonfd4.github.io%2Fportfolioproject1-repeat%2F&width=1400&height=700)
 * [Amiresponsive](docs/ReadmeImg/validation-images/DTH-amiresponsive.png)
+
+---
+## Credits
+- I would like to thank code institute for providing the opportunity to learn and redo this task.
+- Gratitudes to Tutor support for assisting with css.
+
+### Media
+Images were acquired from freepik library.
+* [Image for product detail (different oolong tea)](https://guilteapleasures.wordpress.com/2015/03/07/what-is-oolong-tea/)
+* [video on how to brew oolong tea](https://youtu.be/_TNgqtyqPM8)
+
+
