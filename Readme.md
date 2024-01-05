@@ -90,3 +90,66 @@ The structure of the image was designed with the intention that not all of it wi
 - Balsamiq
 
 ## Test and validation
+validations was carried out and used to make necessary improvements to code for final products.
+<details>
+<summary> Lighthouse validation </summary>
+The accessibility aspect of the code was challenging. Some flaws highlighted by lighthouse validator  and fixed by developer included: 
+
+[Find lighthous errors](validation-images/lighthouse)
+
+**Landing page**
+* forms id and label mismatch
+* image loading issues: not fixed
+* contrast issues
+
+**Product page**
+* Input label mismatch- labels not necessary
+* buttons do no have accessibility names.
+
+**Thank you page**
+No meta description
+
+* Background image loading issues on the homepage
+ - This caused reduction in accessibility and performance. Nonetheless, the other pages had better performance and accessibility.
+</details>
+
+<details>
+<summary>Fixing and debugging<summary>
+
+* lighthous errors were fixed and tested again. Some errors such as image loading were not resolved since they will break the website.
+
+* There were a few minor errors with CSS according to jigsaw validator. The errors can be seen in [here](validation-images/cssjigsaw.png). These were fixed.
+
+* A lot of the [w3c erros](validation-images/w3c) found through out the html were similar:
+ most consist of bad practices and trail slashing. I took note of this and took teh effective time to make the relevant changes in accordance with w3c validation standards.
+
+* The very low performance of the homepage was because of the hero background images and animation. This feature was taken out.
+</details>
+
+<details>
+<summary>Errors not fixed<summary>
+
+**Lighthouse home page**
+
+* Background and foreground colors do not have a sufficient contrast ratio.
+* <frame> or <iframe> elements do not have a title
+* Elements with visible text labels do not have matching accessible names.
+* Image elements have [alt] attributes that are redundant text.
+
+**lighthouse product page**
+* Buttons do not have an accessible name
+* Elements with visible text labels do not have matching accessible names.
+* Image elements have [alt] attributes that are redundant text.
+* Select elements do not have associated label elements.
+</details>
+
+### Form testing
+* Forms were tested to and ensured to send user to the right location
+* Developer ensured forms indicated required alert when user clicked on submit button
+
+### links testing
+* The links were verified to make sure they sent user to the right location
+* Social media elements were not presented as links since there is no page to direct user.
+
+### Browser Testing
+The Website was tested on Google Chrome, Firefox, and safari browsers with no major issues noted except for the display of favicon.
