@@ -61,11 +61,6 @@ header a {
   padding: 5px;
   border-radius: 20px;
 }
-
-.fa-search {
-  color: var(--bright-color);
-}
-
 header li {
   list-style: none;
   padding: 5px 14px;
@@ -327,6 +322,12 @@ input[type="checkbox"] {
 
 .info-text > a {
   text-decoration: none;
+  margin-left: 5px;
+  display: inline-block;
+  color: var(--bright-color);
+  font-weight: bolder;
+}
+.perks{
   margin-left: 5px;
   display: inline-block;
   color: var(--bright-color);
@@ -725,7 +726,7 @@ input[type="checkbox"] {
   
 }
 .knowmore-text-content h2, .knowmore-text-content p{
-  color: var(--bright-color);
+  color: var(--text-color);
   font-weight: bolder;
   background-color: rgba(0, 77, 64, 0.5);
 }
@@ -737,8 +738,10 @@ input[type="checkbox"] {
 }
 
 .knowmore h2 {
+  color: var(--text-color);
   font-size: 1.8rem;
   margin-bottom: 20px;
+
 }
 .knowmore ul {
   margin: 40px;
@@ -869,10 +872,26 @@ input[type="checkbox"] {
 .blog-btn:hover {
   background-color: #45a049;
 }
+ /*blog article styling*/
+ .blog-article {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+
+}
+
+.blog-article img {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
 /* styling footer */
 footer {
   background-color: #678a7e;
+  position: relative;
 }
 footer .logo {
   margin: 0 auto;
@@ -903,8 +922,8 @@ footer .logo {
   margin: 10px;
   transition: 0.3s ease-in-out;
   color: var(--text-color);
-  font-size:1.1em;
-  font-weight:bold;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 .footer-column li:hover {
   transform: scale(1.02);
@@ -913,14 +932,12 @@ footer .logo {
   color: var(--bright-color);
   font-weight: bolder;
   font-size: 2em;
-  transform: scale(1)
 }
 .footer-column a {
   text-decoration: none;
   color: var(--text-color);
-  font-size:1.1em;
-  font-weight:bold;
- 
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .newsletter-signup {
@@ -931,25 +948,30 @@ footer .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .newsletter-signup input[type="email"] {
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
   padding: 10px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 1em;
 }
 
 .newsletter-signup button {
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
   padding: 10px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 1em;
 }
 
 .newsletter-signup button:hover {
@@ -959,6 +981,8 @@ footer .logo {
 .checkbox-div {
   margin-top: 10px;
   text-align: left;
+  width: 80%;
+  max-width: 400px;
 }
 #newsletter-checkbox {
   display: inline;
@@ -977,8 +1001,9 @@ footer .logo {
   font-weight: bold;
 }
 .up-btn {
-  float: right;
-  margin: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   font-size: 30px;
   border-radius: 50%;
   height: 50px;
@@ -986,9 +1011,12 @@ footer .logo {
   background-color: var(--bright-color);
   text-align: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .up-btn a {
   color: green;
+  display: block;
 }
 @media (max-width: 768px) {
   .main-footer-content {
@@ -1007,6 +1035,7 @@ footer .logo {
     width: 100%;
   }
 }
+
 #location-and-contact {
   text-align: center;
   padding: 50px;
@@ -1253,7 +1282,9 @@ option {
 }
 
 /* Styling product pages content */
-
+.fa-search {
+  color: var(--bright-color);
+}
 main {
   display: flex;
   flex-direction: column;
