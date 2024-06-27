@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 1px solid red;
 }
 
 :root {
@@ -683,6 +684,7 @@ input[type="checkbox"] {
 
 /* Know More article styling*/
 .knowmore {
+
   background: url("../images/cupandplant.jpg") no-repeat;
   background-color: green;
   color:  var(--text-color);
@@ -726,11 +728,11 @@ input[type="checkbox"] {
 
 }
 .knowmore ul {
-  margin: 40px;
+  margin:10px;
   padding: 4%;
 }
 .knowmore li {
-  font-size: 1.5em;
+  font-size: 1em;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -755,6 +757,8 @@ input[type="checkbox"] {
   text-decoration: none;
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out;
+ 
+ 
 }
 @media screen and (max-width: 600px) {
   .knowmore{
@@ -762,19 +766,16 @@ input[type="checkbox"] {
     background-position: center; 
   }
   .read-more-btn {
-    min-width: 80px; /* Adjust this value for smaller screens */
+    min-width: 60px; /* Adjust this value for smaller screens */
   }
   .knowmore li{
     font-size: 1em;
   }
 }
-.read-more-btn:hover {
-  background-color: #45a049;
-}
-
 
 .read-more-btn:hover {
   background-color: #45a049;
+
 }
 
 /*blog styling */
