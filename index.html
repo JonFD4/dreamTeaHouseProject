@@ -43,13 +43,16 @@
       </ul>
     </nav>
   
-    <div class="logo">
-      <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
+      </a>
     </div>
+    
   
     <div class="user-action">
       <ul>
-        <li><i class="fas fa-search"></i></li>
+
         <li><a href="sign-page.html">Sign in</a></li>
         <li><a href="sign-page.html">Sign up</a></li>
       </ul>
@@ -70,10 +73,10 @@
 
   <div class="info">
     <p class="delivery info-text">
-      <i class="fa fa-truck"></i> Free <a href="#" role="button">Delivery</a>
+      <i class="fa fa-truck"></i> Free <span class="perks">Delivery</span>
     </p>
     <p class="customer-service info-text">
-      <i class="fa fa-phone"></i> Quality <a href="#location-and-contact" role="button" aria-label="take user to location and contact">Customer service</a>
+      <i class="fa fa-phone"></i> Quality <span class="perks">Customer service</span>
     </p>
     <p class="payment info-text">
       <i class="fa fa-seedling"></i> Payment and
@@ -133,53 +136,48 @@
             <button onclick="readMorefunction()" id="myBtn" aria-label="readmore button">Read More</button>
           </div>
         </div>
-
         <div class="about-content-two">
           <h2 class="about-subtitles">Why choose us?</h2>
           <div class="qualities-text">
             <div class="qt">
               <i class="fa fa-solid fa-handshake"></i>
-              <h3>Ethically resourced</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>Ethically Sourced</h3>
+              <p>We partner with farmers who use sustainable practices, ensuring our tea is both high-quality and ethically produced.</p>
             </div>
             <span class="horizontal"></span>
             <div class="qt">
               <i class="fa fa-award"></i>
               <h3>Exceptional Quality</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Our teas are carefully selected and rigorously tested to meet the highest standards of taste and purity.</p>
             </div>
-
             <span class="horizontal"></span>
             <div class="qt">
               <i class="fa fa-coins"></i>
               <h3>Affordable</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>We offer premium teas at prices that are accessible, providing great value without compromising on quality.</p>
             </div>
-
             <span class="horizontal"></span>
             <div class="qt">
-              <i class="fa fa-globe-africa"></i> <br>
+              <i class="fa fa-globe-africa"></i>
               <h3>Eco-friendly</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Our packaging is 100% recyclable, and we are committed to reducing our carbon footprint.</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="product">
-    <div class="product-wrapper">
-      <div class="des-text">
-        <h1>our products</h1>
-        <h2>Loose leaf Tea Assortment</h2>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
-      </div>
+        </div>
+        </div>
+        </section>
+        
+        <section id="product">
+          <div class="product-wrapper">
+            <div class="des-text">
+              <h1>Our Products</h1>
+              <h2>Loose Leaf Tea Assortment</h2>
+              <p>
+                Discover our diverse range of loose leaf teas, sourced from the finest tea gardens around the world. Each blend offers a unique flavor experience, from classic Earl Grey to exotic Jasmine Green Tea.
+              </p>
+            </div>
+        
       <div class="carousel-container">
         <div class="carousel">
           <div class="slide">
@@ -473,13 +471,14 @@
     
     
   </section>
-
   <footer>
-    <div class="logo">
-      <img src="./assets/images/dreamteahouselogo.png" alt="image of logo">
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
+      </a>
     </div>
+    
     <div class="main-footer-content">
-
       <div class="footer-columns">
         <div class="footer-column">
           <h3>Discover Our Teas</h3>
@@ -510,10 +509,10 @@
         <div class="footer-column">
           <h3>Stay connected on social media:</h3>
           <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
           </ul>
         </div>
       </div>
@@ -522,29 +521,23 @@
         <br>
         <form action="thankyou-newsletter.html" method="get" autocomplete="on">
           <input type="email" name="email" placeholder="Your email address" required>
-      
-            <button type="submit" aria-label="submitButton">
-              Subscribe
-            </button>
-         
+          <button type="submit" aria-label="submitButton">Subscribe</button>
           <div class="checkbox-div">
-          <input type="checkbox" id="newsletter-checkbox" name="newsletter-checkbox" value="newsletter-checkbox">
-         <label for="newsletter-checkbox"> I accept receive ads related to this company</label>
-        </div>
+            <input type="checkbox" id="newsletter-checkbox" name="newsletter-checkbox" value="newsletter-checkbox">
+            <label for="newsletter-checkbox"> I accept receive ads related to this company</label>
+          </div>
         </form>
       </div>
-      
     </div>
-
+  
     <div class="up-btn">
       <a href="#" aria-label="Send to beginning of page">&uarr;</a>
     </div>
     <div class="copyright">
       <p>&copy; 2023 Dream Teahouse. All rights reserved.</p>
-     
     </div>
-  
   </footer>
+  
   <script src="assets/Javascript/main.js"></script>
 </body>
 
