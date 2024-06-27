@@ -200,24 +200,6 @@ input[type="checkbox"] {
   position: relative;
   overflow-y: hidden;
 }
-/*
-@keyframes slide {
-  0%,
-  100% {
-    background-image: url(../images/servingtea-pexels-nikolay-osmachko-230477.jpg);
-  }
-  20% {
-    background-image: url(../images/looseleaf-pexels-lil-artsy-1793035.jpg);
-  }
-  40% {
-    background-image: url(../images/citrus-tray.jpg);
-  }
-  60% {
-    background-image: url(../images/tea-pantation-pexels-quang-nguyen-vinh-6711556.jpg);
-  }
-  80% {
-   
-}*/
 .overlay {
   width: inherit;
   height: inherit;
@@ -1013,6 +995,7 @@ footer .logo {
   align-items: center;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 .up-btn a {
   color: green;
@@ -1054,6 +1037,7 @@ footer .logo {
 }
 .location-image {
   display: flex;
+  flex-direction: column;
 }
 .location-image img {
   width: 640px;
