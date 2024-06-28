@@ -568,11 +568,7 @@ input[type="checkbox"] {
   font-size: 1rem;
   text-align: center;
 }
-.fa-shopping-basket {
-  color: rgb(0,128,0,);
-  font-size: 18px;
-  font-weight: bolder;
-}
+
 .addElem {
   background-color: var(--bright-color);
   margin: 0.5rem;
