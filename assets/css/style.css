@@ -1231,7 +1231,7 @@ main {
   width: 300px;
   height: 250px;
   object-fit: cover;
-  
+
   
 }
 @media (max-width: 768px) {
@@ -1244,6 +1244,7 @@ main {
 }
 }
 .product-details {
+  display: block;
   padding: 20px;
   width: 100%;
   flex: 2;
