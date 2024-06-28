@@ -1214,9 +1214,11 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2em;
-  color: #27ae60; 
-}
 
+}
+.product-price, h1{
+  color: darkgreen
+}
 .product-tile {
   display: flex;
   flex-wrap: wrap;
@@ -1254,7 +1256,6 @@ h1 {
 
 .product-price {
   font-size: 1.1em;
-  color: #27ae60;
   margin-bottom: 10px;
 }
 .product-details button {
