@@ -8,65 +8,37 @@
   <title>DTH-Product-page</title>
 
   <link rel="stylesheet" href="assets/css/style.css" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io_/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io_/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io_/favicon-16x16.png">
-<link rel="manifest" href="assets/images/favicon_io_/site.webmanifest">
-
-  </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io_/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io_/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io_/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon_io_/site.webmanifest">
 </head>
 
 <body>
 
-  <!-- Header 3: Integrated content from header 1 into header 2 -->
-<header class="navbar-mobile">
-  <nav class="navContainer">
-    <input type="checkbox" id="checkbox_toggle">
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+  <header class="navbar-mobile">
+    <nav class="navContainer">
+      <input type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-    <ul class="navItems">
-      <li><a href="index.html" aria-label="take user to home page">Home</a></li>
-      <li><a href="index.html#about" aria-label="take user to about page">About</a></li>
-      <li><a href="index.html#product" aria-labelledby="take user to product section">Products</a></li>
-      <li><a href="index.html#blog" aria-label="take user to blog section">Blog</a></li>
-      <li><a href="index.html#location-and-contact">Contact</a></li>
+      <ul class="navItems">
+        <li><a href="index.html" aria-label="take user to home page">Home</a></li>
+        <li><a href="index.html#about" aria-label="take user to about page">About</a></li>
+        <li><a href="index.html#product" aria-labelledby="take user to product section">Products</a></li>
+        <li><a href="index.html#blog" aria-label="take user to blog section">Blog</a></li>
+        <li><a href="index.html#location-and-contact">Contact</a></li>
 
-      <!-- Integrated User Action Toggle content from header 1 -->
-      <ul class="user-action-toggle">
-        <li>
-          <i class="fa fa-user"></i>
-          <a href="sign-page.html" aria-labelledby="take user to sign in page"><span class="hover-text">My Account</span></a>
-        </li>
-        <li>
-          <span class="hover-text">Check out</span>
-        </li>
       </ul>
-    </ul>
-  </nav>
+    </nav>
 
-  <div class="logo-container">
-    <a href="index.html" class="logo">
-      <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
-    </a>
-  </div>
-  
-
-  <div class="user-action">
-    <ul>
-      <!-- Integrated User Action content from header 1 -->
-      <a href="index.html">
-        <li><i class="product-fa fa fa-user"></i></li>
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
       </a>
-      <li>
-        <button type="button" role="button" aria-label="check-out-basket"><i class="product-fa fa fa-shopping-basket"></i></button>
-      </li>
-    </ul>
-  </div>
-</header>
+    </div>
 
-
+  </header>
 
   <div class="search-bar">
     <form class="search-elem" action="product-page.html" method="get">
@@ -85,7 +57,6 @@
       </select>
       <button class="filter-btn" role="button" type="submit" aria-label="submit-btn">Filter</button>
     </form>
-
   </div>
 
   <main>
@@ -98,11 +69,10 @@
         <div class="product-name">Oolong tea loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="product-page.html" method="get">
+          <form action="cart-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
-
         </div>
         <details>
           <summary>Description and how to brew</summary>
@@ -113,27 +83,26 @@
               specific type of Oolong.</p>
 
             <p>
-            <h2>Nutritional Benefits</h2>
-            <ul>
-              <li>Rich in antioxidants that may help fight free radicals in the body.</li>
-              <li>May aid in weight management by boosting metabolism.</li>
-              <li>Contains polyphenols that could contribute to heart health.</li>
-              <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
-              <li>Possesses potential anti-inflammatory properties.</li>
-            </ul>
+              <h2>Nutritional Benefits</h2>
+              <ul>
+                <li>Rich in antioxidants that may help fight free radicals in the body.</li>
+                <li>May aid in weight management by boosting metabolism.</li>
+                <li>Contains polyphenols that could contribute to heart health.</li>
+                <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
+                <li>Possesses potential anti-inflammatory properties.</li>
+              </ul>
             </p>
-
             <p>
-            <h2>How to Brew </h2>
-            <p>Follow these steps to brew a perfect cup of Oolong tea:</p>
-            <ol>
-              <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
-              <li>Place 1-2 teaspoons of Oolong tea leaves in a teapot or infuser.</li>
-              <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
-              <li>Adjust steeping time based on personal preference for strength.</li>
-              <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
-              <li>Enjoy the unique flavors and aromas of Oolong tea!</li>
-            </ol>
+              <h2>How to Brew</h2>
+              <p>Follow these steps to brew a perfect cup of Oolong tea:</p>
+              <ol>
+                <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
+                <li>Place 1-2 teaspoons of Oolong tea leaves in a teapot or infuser.</li>
+                <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
+                <li>Adjust steeping time based on personal preference for strength.</li>
+                <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
+                <li>Enjoy the unique flavors and aromas of Oolong tea!</li>
+              </ol>
             </p>
           </div>
         </details>
@@ -151,7 +120,7 @@
         <div class="product-price">£5.99</div>
 
         <div>
-          <form action="product-page.html" method="get">
+          <form action="cart-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket" ></i></button>
           </form>
@@ -169,27 +138,27 @@
               sweetness. Blue Eyes Tea is not only a treat for the taste buds but also a feast for the eyes.</p>
 
             <p>
-            <h2>Nutritional Benefits</h2>
-            <ul>
-              <li>Rich in antioxidants that may help fight free radicals in the body.</li>
-              <li>May aid in weight management by boosting metabolism.</li>
-              <li>Contains polyphenols that could contribute to heart health.</li>
-              <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
-              <li>Possesses potential anti-inflammatory properties.</li>
-            </ul>
+              <h2>Nutritional Benefits</h2>
+              <ul>
+                <li>Rich in antioxidants that may help fight free radicals in the body.</li>
+                <li>May aid in weight management by boosting metabolism.</li>
+                <li>Contains polyphenols that could contribute to heart health.</li>
+                <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
+                <li>Possesses potential anti-inflammatory properties.</li>
+              </ul>
             </p>
 
             <p>
-            <h2>How to Brew</h2>
-            <p>Follow these steps to brew a perfect cup of Blue eye tea:</p>
-            <ol>
-              <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
-              <li>Place 1-2 teaspoons of Oolong tea leaves in a teapot or infuser.</li>
-              <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
-              <li>Adjust steeping time based on personal preference for strength.</li>
-              <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
-              <li>Enjoy the unique flavors and aromas of Oolong tea!</li>
-            </ol>
+              <h2>How to Brew</h2>
+              <p>Follow these steps to brew a perfect cup of Blue eye tea:</p>
+              <ol>
+                <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
+                <li>Place 1-2 teaspoons of Blue Eyes tea leaves in a teapot or infuser.</li>
+                <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
+                <li>Adjust steeping time based on personal preference for strength.</li>
+                <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
+                <li>Enjoy the unique flavors and aromas of Blue Eyes tea!</li>
+              </ol>
             </p>
           </div>
         </details>
@@ -199,13 +168,13 @@
 
     <div class="product-tile">
       <div class="product-image">
-        <img src="assets/images/carousel-DTH/Indian chai.jpeg" alt="Indian chai tea loose leaf">
+        <img src="assets/images/carousel-DTH/Indian chai.jpeg" alt="indian chai tea loose leaf">
       </div>
       <div class="product-details">
         <div class="product-name">Indian Chai loose leaf</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="product-page.html" method="get">
+          <form action="cart-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
@@ -223,21 +192,21 @@
               beverage.
             </p>
             <p>
-            <h2>Nutritional Benefits</h2>
-            <ul>
-              <li>Rich in antioxidants that may help fight free radicals in the body.</li>
-              <li>May aid in weight management by boosting metabolism.</li>
-              <li>Contains polyphenols that could contribute to heart health.</li>
-              <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
-              <li>Possesses potential anti-inflammatory properties.</li>
-            </ul>
+              <h2>Nutritional Benefits</h2>
+              <ul>
+                <li>Rich in antioxidants that may help fight free radicals in the body.</li>
+                <li>May aid in weight management by boosting metabolism.</li>
+                <li>Contains polyphenols that could contribute to heart health.</li>
+                <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
+                <li>Possesses potential anti-inflammatory properties.</li>
+              </ul>
             </p>
 
             <p>
             <h2>How to Brew </h2>
             <p>Follow these steps to brew a perfect cup of Indian chai:</p>
 
-            <ol>
+              <ol>
               <li>Measure the desired amount of water for your tea and bring it to a boil in a saucepan.</li>
               <li>Add chai ingredients to the boiling water.</li>
               <li>Reduce the heat to simmer and let the tea steep for 2-5 minutes, depending on how strong you prefer
@@ -247,7 +216,7 @@
                 (some prefer equal parts water and milk).</li>
 
               <li>Sweeten (Optional) with sugar or honey</li>
-            </ol>
+              </ol>
 
             </p>
           </div>
@@ -265,7 +234,7 @@
         <div class="product-name">Dry hibiscus tea</div>
         <div class="product-price">£5.99</div>
         <div>
-          <form action="product-page.html" method="get">
+          <form action="cart-page.html" method="get">
             <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
             <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
           </form>
@@ -283,28 +252,72 @@
               tea as a delicious and health-conscious beverage option.
             </p>
             <p>
-            <h2>Nutritional Benefits</h2>
-            <ul>
-              <li>Rich in antioxidants that may help fight free radicals in the body.</li>
-              <li>May aid in weight management by boosting metabolism.</li>
-              <li>Contains polyphenols that could contribute to heart health.</li>
-              <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
-              <li>Possesses potential anti-inflammatory properties.</li>
-            </ul>
+              <h2>Nutritional Benefits</h2>
+              <ul>
+                <li>Rich in antioxidants that may help fight free radicals in the body.</li>
+                <li>May aid in weight management by boosting metabolism.</li>
+                <li>Contains polyphenols that could contribute to heart health.</li>
+                <li>May help improve mental alertness and focus due to moderate caffeine content.</li>
+                <li>Possesses potential anti-inflammatory properties.</li>
+              </ul>
             </p>
 
             <p>
-            <h2>How to Brew</h2>
+              <h2>How to Brew</h2>
             <p>Follow these steps to brew a perfect cup of Dru hibiscus tea:</p>
-            <ol>
-              <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
+              <ol>
+                <li>Use fresh, filtered water heated to around 185-205°F (85-96°C).</li>
               <li>Place 1-2 teaspoons of Oolong tea leaves in a teapot or infuser.</li>
-              <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
-              <li>Adjust steeping time based on personal preference for strength.</li>
-              <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
+                <li>Pour the hot water over the tea leaves and let it steep for 3-5 minutes.</li>
+                <li>Adjust steeping time based on personal preference for strength.</li>
+                <li>Strain the tea leaves and pour the brewed tea into your favorite cup.</li>
               <li>Enjoy the unique flavors and aromas of Oolong tea!</li>
-            </ol>
+              </ol>
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
 
+    <div class="product-tile">
+      <div class="product-image">
+        <img src="assets/images/matcha-powder.avif" alt="matcha loose leaf">
+      </div>
+      <div class="product-details">
+        <div class="product-name">Matcha loose leaf</div>
+        <div class="product-price">£5.99</div>
+        <div>
+          <form action="cart-page.html" method="get">
+            <input class="purchase-input" type="number" value="1" aria-labelledby="purchase-amount">
+            <button type="submit" role="button" aria-labelledby="add-to-basket"><i class="fa fa-shopping-basket"></i></button>
+          </form>
+        </div>
+        <details>
+          <summary>Description and how to brew</summary>
+          <div class="descriptive-text">
+            <p>Matcha Tea is a finely ground powder made from specially grown and processed green tea leaves. Originating from Japan, it is known for its vibrant green color and rich, umami flavor. Matcha is traditionally used in Japanese tea ceremonies, but it has gained popularity worldwide for its unique taste and numerous health benefits.</p>
+            <p>
+              <h2>Nutritional Benefits</h2>
+              <ul>
+                <li>Rich in antioxidants, particularly catechins, which help fight free radicals in the body.</li>
+                <li>Contains a moderate amount of caffeine, providing a gentle energy boost without the jitters associated with coffee.</li>
+                <li>May enhance mental alertness and focus due to the presence of L-theanine, an amino acid that promotes relaxation and reduces stress.</li>
+                <li>Can aid in weight management by boosting metabolism and promoting fat oxidation.</li>
+                <li>Supports heart health by improving cholesterol levels and blood circulation.</li>
+              </ul>
+            </p>
+            <p>
+              <h2>How to Brew</h2>
+              <p>Follow these steps to brew a perfect cup of Matcha tea:</p>
+              <ol>
+                <li>Sift 1-2 teaspoons of Matcha powder into a bowl to remove any clumps.</li>
+                <li>Heat fresh, filtered water to about 175°F (80°C) — not boiling.</li>
+                <li>Pour a small amount of hot water into the bowl with the Matcha powder.</li>
+                <li>Use a bamboo whisk (chasen) to mix the Matcha and water, creating a smooth paste.</li>
+                <li>Add more hot water to the bowl and whisk vigorously in a zigzag motion until frothy.</li>
+                <li>Adjust the amount of water to achieve your desired strength.</li>
+                <li>Pour the Matcha tea into a cup and enjoy its unique flavors and aromas.</li>
+              </ol>
             </p>
           </div>
 
@@ -313,11 +326,12 @@
     </div>
   </main>
 
-    <div class="copyright">
-      <p>&copy; 2023 Dream Teahouse. All rights reserved.</p>
+  <div class="copyright">
+    <p>&copy; 2023 Dream Teahouse. All rights reserved.</p>
 
-    </div>
+  </div>
 
 </body>
 
 </html>
+
