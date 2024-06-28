@@ -1366,7 +1366,7 @@ li {
 /* Styling thank you page */
 .tyc-wrapper {
   background: url("../images/teabackground.jpg") no-repeat;
-  background-size: 100%;
+  background-size:cover;
   background-color: #f0fdf4;
   text-align: center;
   padding: 50px;
