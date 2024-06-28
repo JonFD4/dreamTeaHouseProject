@@ -609,6 +609,7 @@ input[type="checkbox"] {
 .knowmore {
 
   background: url("../images/cupandplant.jpg") no-repeat;
+  background-size: cover;
   background-color: green;
   color:  var(--text-color);
   padding: 4rem 0;
