@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Dream Teahouse</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io_/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io_/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io_/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/favicon_io_/site.webmanifest">
+  <script>
+    function proceedToCheckout() {
+      window.location.href = 'purchasecomplete.html';
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar-mobile">
+    <nav class="navContainer">
+      <input type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <ul class="navItems">
+        <li><a href="index.html" aria-label="take user to home page">Home</a></li>
+        <li><a href="index.html#about" aria-label="take user to about page">About</a></li>
+        <li><a href="index.html#product" aria-labelledby="take user to product section">Products</a></li>
+        <li><a href="index.html#blog" aria-label="take user to blog section">Blog</a></li>
+        <li><a href="index.html#location-and-contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+    <div class="logo-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/dreamteahouselogo.png" alt="Dream Tea House Logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-items">
+      <!-- Example of a Cart Item -->
+      <div class="cart-item">
+        <div class="cart-product-image">
+          <img src="assets/images/carousel-DTH/oolongplain.jpeg" alt="Oolong tea loose leaf">
+        </div>
+        <div class="cart-product-details">
+          <div class="cart-product-name">Oolong tea loose leaf</div>
+          <div class="cart-product-price">£5.99</div>
+          <div class="cart-product-quantity">
+            <label for="quantity-oolong">Quantity:</label>
+            <input type="number" id="quantity-oolong" name="quantity-oolong" value="1" min="1">
+          </div>
+          <div class="cart-product-total-price">£5.99</div>
+        </div>
+        <button class="remove-item" aria-label="Remove Oolong tea from cart"><i class="fas fa-trash"></i></button>
+      </div>
+
+      <!-- Repeat the above block for other items in the cart -->
+
+    </div>
+
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <div class="summary-item">
+        <span>Subtotal</span>
+        <span>£23.96</span> <!-- Example subtotal, update dynamically -->
+      </div>
+      <div class="summary-item">
+        <span>Discount</span>
+        <span>£0.00</span> <!-- Example discount, update dynamically -->
+      </div>
+      <div class="summary-item total">
+        <span>Total</span>
+        <span>£23.96</span> <!-- Example total, update dynamically -->
+      </div>
+      <div class="discount-code">
+        <label for="discount-code">Have a discount code?</label>
+        <input type="text" id="discount-code" name="discount-code">
+        <button type="button" class="apply-discount">Apply</button>
+      </div>
+      <button type="button" class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <div class="copyright">
+    <p>&copy; 2023 Dream Teahouse. All rights reserved.</p>
+  </div>
+</body>
+
+</html>
