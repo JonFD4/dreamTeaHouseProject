@@ -967,6 +967,8 @@ footer .logo {
 .location-image {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .location-image img {
   width: 640px;
