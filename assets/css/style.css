@@ -1309,7 +1309,7 @@ details summary {
   margin: 10px;
 }
 
-p {
+p, .descriptive-text div {
   line-height: 1.5;
   margin-bottom: 10px;
 }
