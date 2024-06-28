@@ -56,8 +56,7 @@ header a {
   display: flex;
   flex-direction: row;
 }
-.navItems a:hover,
-.user-action a:hover {
+.navItems a:hover{
   background-color: var(--bright-color);
   padding: 5px;
   border-radius: 20px;
@@ -73,19 +72,12 @@ header li {
   font-size: 18px;
 }
 
-.user-action ul {
-  display: flex;
-  color: var(--text-color)
-  ;
-}
 
 input[type="checkbox"] {
   display: none;
 }
 
-.user-action-toggle {
-  display: none;
-}
+
 
 /* Hamburger Menu Styles */
 .hamburger {
@@ -136,53 +128,11 @@ input[type="checkbox"] {
     z-index: 2;
   }
 
-  
-
-  .user-action-toggle {
-    display: flex;
-    justify-content: center;
-    width:100%;
-    flex-direction: row;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(103, 138, 126, 1);
-    z-index: 2;
-  }
-
-  .user-action-toggle li {
-    list-style: none;
-    padding: 5px 14px;
-  }
-
-  .user-action-toggle li, .user-action-toggle a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.2em;
-    font-weight: bolder;
-    transition: all 0.5s;
-  }
-
-  .user-action-toggle li:hover, .user-action-toggle a:hover {
-    background-color: var(--bright-color);
-    color:var(--text-color);
-    padding: 5px;
-    border-radius: 20px;
-  }
-
-  .user-action-toggle * .fa {
-    color: var(--bright-color);
-    margin-right: 5px;
-  }
-
   .hamburger {
     display: block;
     color: var(--bright-color);
   }
 
-  .user-action {
-    display: none;
-  }
 }
 
 
@@ -865,11 +815,16 @@ input[type="checkbox"] {
   overflow: hidden;
   border-radius: 8px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 
 }
 
 .blog-article img {
-  width: 100%;
+  width: 70%;
   height: auto;
   min-height: 200px;
   border-top-left-radius: 8px;
@@ -1441,7 +1396,7 @@ li {
 .tyc-wrapper {
   background: url("../images/teabackground.jpg") no-repeat;
   background-size: 100%;
-
+  background-color: #f0fdf4;
   text-align: center;
   padding: 50px;
   margin: 0;
