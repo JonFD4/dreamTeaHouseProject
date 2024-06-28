@@ -605,7 +605,7 @@ input[type="checkbox"] {
 }
 .product-desc{
   width: 30vw;
-  height: 15vw;
+  height: 30vw;
   padding: 20px;
   text-align: center;
 
@@ -619,7 +619,7 @@ input[type="checkbox"] {
   text-align: center;
 }
 .fa-shopping-basket {
-  color: rgb(0, 128, 0,);
+  color: rgb(0,128,0,);
   font-size: 18px;
   font-weight: bolder;
 }
@@ -629,7 +629,7 @@ input[type="checkbox"] {
   border: none;
   border-radius: 5px;
   height: 3vh;
-  width: 10vw;
+  width: 15vw;
   cursor: pointer;
 }
 .addElem:target {
@@ -1087,7 +1087,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  font-size: 10px; 
+  font-size: 1.2rem; 
     padding: 10px; 
 }
 
