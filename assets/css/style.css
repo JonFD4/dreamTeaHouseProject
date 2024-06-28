@@ -553,35 +553,7 @@ input[type="checkbox"] {
   margin-bottom: 15px;
   font-size: larger;
 }
-.product-desc{
-  width: 30vw;
-  height: 30vw;
-  padding: 20px;
-  text-align: center;
 
-}
-.purchase {
-  width: 90px;
-  height: 30px;
-  border-radius: 5px;
-  border: 1px solid green;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.addElem {
-  background-color: var(--bright-color);
-  margin: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  height: 3vh;
-  width: 15vw;
-  cursor: pointer;
-}
-.addElem:target {
-  height: 2vh;
-  width: 9vh;
-}
 .scroll-buttons {
   margin-top: 5px;
 }
