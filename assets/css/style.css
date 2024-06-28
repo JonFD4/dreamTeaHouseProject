@@ -792,7 +792,7 @@ input[type="checkbox"] {
 }
 
 .blog-article img {
-  width: 70%;
+  width: 50%;
   height: auto;
   min-height: 200px;
   border-top-left-radius: 8px;
