@@ -4,7 +4,7 @@ Scenario: Dream Teahouse is a newly established premium teashop that offers a un
 ![dream teahouse](docs/ReadmeImg/validation-images/DTH-amiresponsive.png)
 This is the live website and repo:
 * [Dream Teahouse](https://jonfd4.github.io/dreamTeaHouseProject/)
-* [Repositiory](https://github.com/JonFD4/portfolioproject1redo.git)
+* [Repositiory](https://github.com/JonFD4/dreamTeaHouseProject.git)
 ### To deploy on github
 1. Sign in to github and find the right repository.
 2. Click on settings and then pages.
