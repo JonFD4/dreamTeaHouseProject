@@ -1,5 +1,7 @@
 # Dream Tea House
-Scenario: Dream Teahouse is a newly established premium teashop that offers a unique, high-quality tea blend as its flagship product. To portray their commitment to providing an exceptional tea-drinking experience, Dream Teahouse plans to create an informational website that will serve as an online resource for tea enthusiasts and potential customers. 
+**Description** Dream Teahouse is a newly established premium teashop that offers a unique, high-quality tea blend as its flagship product. 
+The Dream TeaHouse website aims to be the ultimate online resource for tea enthusiasts and casual drinkers alike, providing comprehensive information on various teas, their origins, brewing techniques, and health benefits.
+
 ## Deployment
 ![dream teahouse](docs/Readmeimages/validation/DTH-amiresponsive.png)
 This is the live website and repo:
@@ -38,17 +40,35 @@ Create a functional and aesthetically pleasing website that is responsive, consi
 **Remaking portfolio one**
 
 
-## Design process
-## User Perspective:
-As a potential customer or a tea enthusiast, visiting Dream Teahouse's website, the user would expect the following:
+## Design process 
 
-1. Product Details: Users would want comprehensive information about the tea blend, including its unique flavors, origins, the ingredients used, and the detailed brewing instructions. This will help them understand the quality and uniqueness of the product.
+#### Target Users
+- **Tea Enthusiasts:** Individuals with a deep interest in learning about different types of tea, their preparation, and history.
+- **Health-Conscious Individuals:** People looking for information on the health benefits of various teas.
+- **Casual Drinkers:** Individuals who enjoy tea casually and are looking for basic information and recommendations.
 
-2. Mission and Story: Users are interested in learning about the teashop's mission, values, and the story behind the creation of the signature tea blend. This information gives them a deeper connection and understanding of the brand.
+#### Specific User Value
+- **Extensive Tea Database:** Detailed descriptions of various teas, including their origins, flavor profiles, and brewing instructions.
+- **Health Information:** Articles and resources on the health benefits of different teas and how they can be incorporated into a healthy lifestyle.
+- **Educational Content:** Guides, videos, and tutorials on tea preparation, storage, and tasting techniques.
 
-3. Tea Education: Users would want access to educational content about tea, such as brewing tips, information on different types of tea, health benefits, and the proper way to serve and enjoy tea. They desire a platform that not only offers products but also educates and enriches their tea-drinking experience.
+#### Possible Scenarios
+1. **Scenario 1: Exploring New Teas**
+   - **User:** A tea enthusiast looking to discover new varieties of tea.
+   - **Interaction:** They browse the Dream TeaHouse website to read detailed descriptions and reviews of different teas.
+   - **Value:** The comprehensive information helps them make informed choices and enhances their tea-drinking experience.
 
-4. Product Availability: Users would appreciate a section that informs them about where the product can be purchased, both online and in physical stores. Details about shipping options, retail partners, and any upcoming events or promotions would be useful.
+2. **Scenario 2: Understanding Health Benefits**
+   - **User:** A health-conscious individual researching the benefits of green tea.
+   - **Interaction:** They visit the Dream TeaHouse website to read articles on the health benefits and recommended daily intake of green tea.
+   - **Value:** The accurate and detailed health information helps them incorporate green tea into their diet effectively.
+
+3. **Scenario 3: Basic Tea Preparation**
+   - **User:** A casual drinker looking for simple brewing instructions for black tea.
+   - **Interaction:** They find and follow a step-by-step brewing guide on the Dream TeaHouse website.
+   - **Value:** The easy-to-follow guide ensures they can brew a perfect cup of black tea, enhancing their enjoyment.
+
+
 
 ## Familiarity of users
 **First time user**
