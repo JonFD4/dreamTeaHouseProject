@@ -1,7 +1,7 @@
 # Dream Tea House
 Scenario: Dream Teahouse is a newly established premium teashop that offers a unique, high-quality tea blend as its flagship product. To portray their commitment to providing an exceptional tea-drinking experience, Dream Teahouse plans to create an informational website that will serve as an online resource for tea enthusiasts and potential customers. 
 ## Deployment
-![dream teahouse](docs/ReadmeImg/validation-images/DTH-amiresponsive.png)
+![dream teahouse](docs/Readmeimages/validation/DTH-amiresponsive.png)
 This is the live website and repo:
 * [Dream Teahouse](https://jonfd4.github.io/dreamTeaHouseProject/)
 * [Repositiory](https://github.com/JonFD4/dreamTeaHouseProject.git)
@@ -26,7 +26,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type git clone, and then paste the URL you copied in Step 3.
      ```bash
-     $ git clone https://github.com/JonFD4/projectportfolio2-0.git
+     $ git clonehttps://github.com/JonFD4/dreamTeaHouseProject.git
      ```
 7. Press Enter. Your local clone will be created.
 ---
@@ -93,20 +93,20 @@ The structure of the image was designed with the intention that not all of it wi
 <summary> Lo-fi prototyping of dream tea house website with balsamiq</summary>
 
 * Desktop wireframe
-  - [Landing page 1](docs/ReadmeImg/Dream-Teahouse-planning/landing-page.png)
-  - [Landing page 2](docs/ReadmeImg/Dream-Teahouse-planning/dream-teahouse-landing-page.png)
-  - [About](docs/ReadmeImg/Dream-Teahouse-planning/About-us.png)
-  - [product carousel section](docs/ReadmeImg/Dream-Teahouse-planning/product-carousel.png)
-  - [popular product section](docs/ReadmeImg/Dream-Teahouse-planning/popular-product.png)
-  - [blog section](docs/ReadmeImg/Dream-Teahouse-planning/Blog-desktop.png)
-  - [footer section](docs/ReadmeImg/Dream-Teahouse-planning/footer.png)
+  - [Landing page 1](docs/Readmeimages/Dream-Teahouse-planning/landing-page.png)
+  - [Landing page 2](docs/Readmeimages/Dream-Teahouse-planning/dream-teahouse-landing-page.png)
+  - [About](docs/Readmeimages/Dream-Teahouse-planning/About-us.png)
+  - [product carousel section](docs/Readmeimages/Dream-Teahouse-planning/product-carousel.png)
+  - [popular product section](docs/Readmeimages/Dream-Teahouse-planning/popular-product.png)
+  - [blog section](docs/Readmeimages/Dream-Teahouse-planning/Blog-desktop.png)
+  - [footer section](docs/Readmeimages/Dream-Teahouse-planning/footer.png)
   <br>
 * Mobile wireframe
-    - [landing page mobile 1](docs/ReadmeImg/Dream-Teahouse-planning/mobile-layout/smaller-screen-landing-page.png)
-    - [landing page mobile 2](docs/ReadmeImg/Dream-Teahouse-planning/mobile-layout/pt2-landing-page-mobilepng.png)
-     - [About ](docs/ReadmeImg/Dream-Teahouse-planning/mobile-layout/smaller-screen-about.png)
-     - [product carousel mobile screen](docs/ReadmeImg/Dream-Teahouse-planning/mobile-layout/product-carousel-smaller-screen.png)
-     - [Full product page](docs/ReadmeImg/Dream-Teahouse-planning/mobile-layout/product-html-smaller-screen.png)
+    - [landing page mobile 1](docs/Readmeimages/Dream-Teahouse-planning/mobile-layout/smaller-screen-landing-page.png)
+    - [landing page mobile 2](docs/Readmeimages/Dream-Teahouse-planning/mobile-layout/pt2-landing-page-mobilepng.png)
+     - [About ](docs/Readmeimages/Dream-Teahouse-planning/mobile-layout/smaller-screen-about.png)
+     - [product carousel mobile screen](docs/Readmeimages/Dream-Teahouse-planning/mobile-layout/product-carousel-smaller-screen.png)
+     - [Full product page](docs/Readmeimages/Dream-Teahouse-planning/mobile-layout/product-html-smaller-screen.png)
 </details>
 
 ## Features
@@ -117,79 +117,78 @@ The structure of the image was designed with the intention that not all of it wi
 <br>
 
 ![navbar page](docs/ReadmeImg/features/A-landingpage.png)
-![responsive navbar page](docs/ReadmeImg/features/responsivenavbar.jpeg)
-* The navigation bar is fully responsive, and redirects to the user:
-  - about, blog,contact and sign page. The home button reloads the page.
+![responsive navbar page](docs/Readmeimages/features/responsivenavbar.jpeg)
+* The navigation bar is fully responsive, and redirects the user to:
+  - about, blog, and contact. The home button reloads the page.
   - The elements are styled so that as user hovers background changes.
   - the responsive styling converts the navigation bar to a hamburger menu that retains all features.
   - the navigation bar can be seen through out all the web pages. Except for the thank you pages
-    - in the sign in page the sign in and sign up buttons are removed. These are replaced with my account and checkout buttons in product page.
 
-![landing page](docs/ReadmeImg/features/B-landingpage.png)
+![landing page](docs/Readmeimages/features/B-landingpage.png)
 * The landing page, on load, shows a fade in of the welcome text.
 * The button underneath directs user to product section
-* There are also three buttons: 
-  - Free delivery does not direct user.
-  - Quality customer service directs user to contact
-  - Payments and our products directs user to product page.
+
 
 **About section**
-![About page](docs/ReadmeImg/features/s-aboutus.png)
+![About page](docs/Readmeimages/features/about-section.png)
 * The about page gives details about the company and their mission for ethical productions.
 * The button when clicked shows more details. This function is implemented using JS.
 
 **Product section**
-![product section](docs/ReadmeImg/features/tproduct-sect.png)
+![product section](docs/Readmeimages/features/product-carousel.png)
 * The product section acts as a precursor to the whole product page. It allows user to view some interesting and popular products.
 * It has scroll function that shows images three at a time and one at a time when screen width is reduced.
 * The more product button sends user to the product page.
 
 **Knowmore section**
-![popular products section](docs/ReadmeImg/features/tpprosect.png)
+![popular products section](docs/Readmeimages/features/popular-productimage.png)
 * The image inspire calm and relaxation related to the product.
 * Hovering over the text causes the scale to increase.
 * The button sends user to an article about the product.
 **Blog section**
-![blog section](docs/ReadmeImg/features/ublog.png)
+![blog section](docs/Readmeimages/features/blog-sectimages.png)
 * The blog section consists of a number of articles that when hovered on the box shadow effect appears.
-* The buttons do not direct user to anywhere.
+* The buttons do direct user to a simple page that represents each of the tiles on that section.
 
 **location and contact**
-![location](docs/ReadmeImg/features/vlocationandcontact.png)
+![location](docs/Readmeimages/features/location-imagesect.png)
 * The location section shows a whimsical image to attract customers, a map, opening times, and  contact information.
+* A map for user direction, contact details, as well as opening  and closing times
 
-![footer](docs/ReadmeImg/features/footerimage.png)
+![footer](docs/Readmeimages/features/footerimage.png)
 * The footer consists of empty text to represent buttons. (All elements under `teahouse events`, `stay connected on social media`,and `careers` )
 * Hovering over the text causes the scale to increase.
 * Elements of `Discover out tea` direct user to product page
 * Subscribe newsletter button directs user to thank you page
-* It also has a button that directs user to the top of the page
+* It also has a button that directs user to the top of the page. This button remains fixed through out the age as user scrolls.
 </details>
-<details>
-<summary> Description of product page and </summary>
 
-![product page](docs/ReadmeImg/features/wproductpage.png)
-* The navbar is similar to that of index page, however on the right side are two buttons- check out and a person icon- my account.
+<details>
+<summary> Description of product page and Cart-page </summary>
+
+![product page](docs/Readmeimages/features/product-page.png)
+* The navbar is remains the same with index page.
 * It maintains the same functionality as the index page. The buttons present will direct user to the sections on index.html.
 * the responsive feature remains the same.
-* Each product is in a tile. A button to chose the number of products the user wants and beside is the basket icon.
+* Each product is in a tile. A button to chose the number of products the user wants and beside is the basket icon which leads user to the cart-page.
 * The description feature reveals the product details and how to use it.
 
-![product page](docs/ReadmeImg/features/xproductpagefooter.png)
-* This footer is simply a copyright statement.
+
+![cart page](docs/Readmeimages/features/cart-pageimage.png)
+* The cart-page shows a layout based on a user's selection.
+* It has a non-functional delete button, an input to apply discount, and a proceed to checkout button that sends user to purchasecompletion page.
 </details>
 
 <details>
-<summary> Description of sign page and thank you page</summary>
+<summary> Description of purchase completion and thank you page</summary>
 
-![sign page](docs/ReadmeImg/features/ysignpage.png)
-* The sign page shows the input section against a beautiful backdrop which maintains the serene feel this website aims for.
-* The sign section is styled to ensure that the input is filled before submit button directs user to another page.
-* The button on the sign-in section sends user to the home page. The button on the [sign-up section](docs/ReadmeImg/features/signupsection.png) sends user tp the thank you page.
-* Javascript is used so that user can easily swith between the two state depending on what they require.
+**Thank you for your purchase**
+![Thank you purchase page](docs/Readmeimages/features/purchasecompletimage.png)
+* This page acknowledges the user purchase.
+* A link to send user to the home page
 
-**Thank you**
-![Thank you page](docs/ReadmeImg/features/zthankyoupage.png)
+**Thank you for subscribing**
+![Thank you subscription page](docs/Readmeimages/features/thankyousubscription-page.png)
 * This page acknowledges the user.
 * It also presents icons for the user to access the companies social media
 * A link to send user to the home page
@@ -200,13 +199,13 @@ The structure of the image was designed with the intention that not all of it wi
 <details>
 <summary> Description of popular product page</summary>
 
-![Popular product page](docs/ReadmeImg/features/pop-product1.png)
+![Popular product page](docs/Readmeimages/features/pop-product1.png)
 * The page features a navbar the functions in the same manner as the other pages.
 * It contains descriptive text about the popular product. Including images and a video.
 * The video, on load is muted, however has controls for user to determine what they want to do with the video.
 * At the bottom is a link that directs user to the product page.
 
-![Popular product page](docs/ReadmeImg/features/pop-product.png)
+![Popular product page](docs/Readmeimages/features/pop-product.png)
 
 </details>
 
@@ -238,9 +237,11 @@ The structure of the image was designed with the intention that not all of it wi
 validations was carried out and used to make necessary improvements to code for final products.
 <details>
 <summary> Lighthouse validation </summary>
-The accessibility aspect of the code was challenging. Some flaws highlighted by lighthouse validator  and fixed by developer included: 
+The accessibility aspect of the code was challenging. Some flaws highlighted by lighthouse validator  and fixed by developer included in this folder: 
 
-[Find lighthous errors](docs/ReadmeImg/validation-images/lighthouse)
+[Find lighthous errors](docs/Readmeimages/validation/lighthouse)
+
+The lighthouse was used to the performance of the website on each page. The most troublesome one was the product pages which had multiple layout shifts. This was remedied by change the images and restyling the html to minimize layout shift. It brought the performance from 75 to 89.
 
 **Landing page**
 * forms id and label mismatch
@@ -263,12 +264,11 @@ No meta description
 
 * lighthous errors were fixed and tested again. Some errors such as image loading were not resolved since they will break the website.
 
-* There were a few minor errors with CSS according to jigsaw validator. The errors can be seen in [here](docs/ReadmeImg/validation-images/cssjigsaw.png). These were fixed.
+* There were a no errors with CSS according to jigsaw validator. This can be seen in [here](docs/Readmeimages/validation/jigsaw-validation). These were fixed.
 
-* A lot of the [w3c erros](docs/ReadmeImg/validation-images/w3c) found through out the html were similar:
- most consist of bad practices and trail slashing. I took note of this and took teh effective time to make the relevant changes in accordance with w3c validation standards.
+* A lot of the [w3c tests](docs/Readmeimages/validation/w3chtmlvalidation) found through out the html were similar:
+ most consist of bad practices and trail slashing. I took note of this and took the effective time to make the relevant changes in accordance with w3c validation standards.
 
-* The very low performance of the homepage was because of the hero background images and animation. This feature was taken out.
 </details>
 
 <details>
@@ -294,14 +294,14 @@ No meta description
 
 ### links testing
 * The links were verified to make sure they sent user to the right location
-* Social media elements were not presented as links since there is no page to direct user.
+
 
 ### Browser Testing
 The Website was tested on Google Chrome, Firefox, and safari browsers with no major issues noted except for the display of favicon.
 
 ### Responsiveness testing
-* [Responsive checker](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fjonfd4.github.io%2Fportfolioproject1-repeat%2F&width=1400&height=700)
-* [Amiresponsive](docs/ReadmeImg/validation-images/DTH-amiresponsive.png)
+* [Responsive checker](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fjonfd4.github.io%2FdreamTeaHouseProject%2Findex.html&width=1400&height=700)
+* [Amiresponsive](docs/Readmeimages/validation/DTH-amiresponsive.png)
 
 ---
 ## Credits
