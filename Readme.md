@@ -136,7 +136,7 @@ The structure of the image was designed with the intention that not all of it wi
 **Landing Page**
 <br>
 
-![navbar page](docs/ReadmeImg/features/A-landingpage.png)
+![navbar page](docs/Readmeimages/features/A-landingpage.png)
 ![responsive navbar page](docs/Readmeimages/features/responsivenavbar.jpeg)
 * The navigation bar is fully responsive, and redirects the user to:
   - about, blog, and contact. The home button reloads the page.
@@ -252,76 +252,72 @@ The structure of the image was designed with the intention that not all of it wi
 
 
 ---
+## Test and Validation
+Validations were carried out and used to make necessary improvements to the code for the final product.
 
-## Test and validation
-validations was carried out and used to make necessary improvements to code for final products.
 <details>
-<summary> Lighthouse validation </summary>
-The accessibility aspect of the code was challenging. Some flaws highlighted by lighthouse validator  and fixed by developer included in this folder: 
+<summary>Lighthouse Validation</summary>
+The accessibility aspect of the code was challenging. Some flaws highlighted by the Lighthouse validator and subsequently fixed by the developer included:
 
-[Find lighthous errors](docs/Readmeimages/validation/lighthouse)
+[Find Lighthouse errors](docs/Readmeimages/validation/lighthouse)
 
-The lighthouse was used to the performance of the website on each page. The most troublesome one was the product pages which had multiple layout shifts. This was remedied by change the images and restyling the html to minimize layout shift. It brought the performance from 75 to 89.
+Lighthouse was used to evaluate the performance of the website on each page. The most troublesome page was the product page, which had multiple layout shifts. This was remedied by changing the images and restyling the HTML to minimise layout shifts, improving the performance score from 75 to 89.
 
-**Landing page**
-* forms id and label mismatch
-* image loading issues: not fixed
-* contrast issues
+**Landing Page**
+* Forms ID and label mismatch
+* Image loading issues: not fixed
+* Contrast issues
 
-**Product page**
-* Input label mismatch- labels not necessary
-* buttons do no have accessibility names.
+**Product Page**
+* Input label mismatch - labels not necessary
+* Buttons do not have accessible names
 
-**Thank you page**
-No meta description
+**Thank You Page**
+* No meta description
 
-* Background image loading issues on the homepage
- - This caused reduction in accessibility and performance. Nonetheless, the other pages had better performance and accessibility.
+**Background Image Loading Issues on the Homepage**
+* This caused a reduction in accessibility and performance. However, the other pages had better performance and accessibility.
 </details>
 
 <details>
-<summary>Fixing and debugging<summary>
+<summary>Fixing and Debugging</summary>
 
-* lighthous errors were fixed and tested again. Some errors such as image loading were not resolved since they will break the website.
+* Lighthouse errors were fixed and tested again. Some errors, such as image loading issues, were not resolved as fixing them would break the website.
 
-* There were a no errors with CSS according to jigsaw validator. This can be seen in [here](docs/Readmeimages/validation/jigsaw-validation). These were fixed.
+* There were no errors with CSS according to the Jigsaw validator. This can be seen [here](docs/Readmeimages/validation/jigsaw-validation). Any issues identified were fixed.
 
-* A lot of the [w3c tests](docs/Readmeimages/validation/w3chtmlvalidation) found through out the html were similar:
- most consist of bad practices and trail slashing. I took note of this and took the effective time to make the relevant changes in accordance with w3c validation standards.
-
+* Many of the [W3C tests](docs/Readmeimages/validation/w3chtmlvalidation) found throughout the HTML were similar, consisting mostly of bad practices and trailing slashes. These were noted and the relevant changes were made in accordance with W3C validation standards.
 </details>
 
 <details>
-<summary>Errors not fixed<summary>
+<summary>Errors Not Fixed</summary>
 
-**Lighthouse home page**
-
-* Background and foreground colors do not have a sufficient contrast ratio.
-* '`<frame>` or `<iframe>`' elements do not have a title.
+**Lighthouse Home Page**
+* Background and foreground colours do not have a sufficient contrast ratio
+* `<frame>` or `<iframe>` elements do not have a title
 * Elements with visible text labels do not have matching accessible names.
-* Image elements have [alt] attributes that are redundant text.
+* Image elements have `alt` attributes that are redundant text
 
-**lighthouse product page**
-* Buttons do not have an accessible name
-* Elements with visible text labels do not have matching accessible names.
-* Image elements have [alt] attributes that are redundant text.
-* Select elements do not have associated label elements.
+**Lighthouse Product Page**
+* Buttons do not have an accessible names
+* Elements with visible text labels do not have matching accessible names
+* Image elements have `alt` attributes that are redundant text
+* Select elements do not have associated label elements
 </details>
 
-### Form testing
-* Forms were tested to and ensured to send user to the right location
-* Developer ensured forms indicated required alert when user clicked on submit button
+### Form Testing
+* Forms were tested to ensure they send users to the correct location
+* The developer ensured forms indicated a required alert when the user clicked on the submit button
 
-### links testing
-* The links were verified to make sure they sent user to the right location
-
+### Links Testing
+* The links were verified to ensure they sent users to the correct location
 
 ### Browser Testing
-The Website was tested on Google Chrome, Firefox, and safari browsers with no major issues noted except for the display of favicon.
+The website was tested on Google Chrome, Firefox, and Safari browsers with no major issues noted, except for the display of the favicon.
 
-### Responsiveness testing
-* [Responsive checker](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fjonfd4.github.io%2FdreamTeaHouseProject%2Findex.html&width=1400&height=700)
-* [Amiresponsive](docs/Readmeimages/validation/DTH-amiresponsive.png)
+### Responsiveness Testing
+* [Responsive Checker](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fjonfd4.github.io%2FdreamTeaHouseProject%2Findex.html&width=1400&height=700)
+* [Am I Responsive](docs/Readmeimages/validation/DTH-amiresponsive.png)
 
 ---
 ## Credits
