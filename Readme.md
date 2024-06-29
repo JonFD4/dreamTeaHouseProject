@@ -236,6 +236,7 @@ The structure of the image was designed with the intention that not all of it wi
  - CSS
  - JavaScript
  - HTML
+ - [Bulk Resize](https://bulkresizephotos.com/en) : to resize images
 
 **Libraries and Frameworks used**
 * VS Code
